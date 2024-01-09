@@ -1,0 +1,7 @@
+./.trash/
+./.trash/*
+./shelf/
+./workspace.xml
+.obsidian/community-plugins.json
+.obsidian/graph.json
+.obsidian/workspace.json
