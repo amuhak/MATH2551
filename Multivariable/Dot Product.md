@@ -11,4 +11,11 @@ Dot product of two vectors $u$ and $v$ is also given by,
 $$
 \vec{u} \cdot \vec{v} = ||\vec{u}|| \ ||\vec{v}|| \cos{\theta}
 $$
-If $$
+Projection, 
+$$
+\text{proj}_b a = \left( \dfrac{a \cdot b}{||b||} \right) \dfrac{b}{||b||}
+$$
+**scalar component** of $a$ in the direction of $b$,
+$$
+\text{comp}_b a = \dfrac{a \cdot b}{||b||} =||a|| \cos{\theta}
+$$
