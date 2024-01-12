@@ -11,3 +11,4 @@ Dot product of two vectors $u$ and $v$ is also given by,
 $$
 \vec{u} \cdot \vec{v} = ||\vec{u}|| \ ||\vec{v}|| \cos{\theta}
 $$
+If $$
