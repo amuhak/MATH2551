@@ -1,0 +1,1 @@
+The vector which is perpendicular to both vector $a$ and vector $b$, the sides of a  parallelogram is the cross product, is the cross product of 
