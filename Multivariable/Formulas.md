@@ -59,12 +59,9 @@ $$
 ## Graphs
 
 $$
-
 \begin{align*}
 
-  
-
-\text{Cylinder: }ax^n+by^m&=c,ax^n+bz^m&=c,ay^n+bz^m&=c\\
+\text{Cylinder: }ax^n+by^m&=c,ax^n+bz^m \\ &=c,ay^n+bz^m \\ &=c\\
 
 \text{Elliptical Paraboloid: }\frac{x^2}{a^2}+\frac{y^2}{b^2}&=\frac{z}{c}\\
 
@@ -80,7 +77,7 @@ $$
 
 \text{Line through }P(p_0,p_1,p_2)\text{ and parallel to }\vec{v}&=a\vec{i}+b\vec{j}+c\vec{k}:\\
 
-x&=at+p_0, y&=bt+p_1, z&=ct+p_2\\
+x&=at+p_0, y \\ &=bt+p_1, z \\ &=ct+p_2\\
 
 \langle at+p_0,bt+p_1,ct+p_3 \rangle &= \langle a,b,c \rangle t+ \langle p_0,p_1,p_2 \rangle , -\infty<t<\infty\\
 
@@ -95,7 +92,6 @@ a(x-p_0)+b(y-p_1)+c(z-p_3)&=0\\
 \text{Distance between Point }S\text{ and plane}: d&=\left|\vec{PS}\cdot\frac{\vec{n}}{||\vec{n}||}\right|\\
 
 \end{align*}
-
 $$
 
   
