@@ -6,7 +6,19 @@ $$
 \vec{a} \times \vec{b} &=
 \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\
 a_1 & a_2 & a_3\\
-b_1 & b_2 & b_3  \end{vmatrix}\\
+b_1 & b_2 & b_3  \end{vmatrix}\\ &= 
+\begin{bmatrix}
+u_2 & u_3 \\
+v_2 & v_3
+\end{bmatrix} \mathbf{i} -
+\begin{bmatrix}
+u_1 & u_3 \\
+v_1 & v_3 
+\end{bmatrix} \mathbf{j} + 
+\begin{bmatrix}
+u_1 & u_2 \\
+v_1 & v_2
+\end{bmatrix} \mathbf{k} \\
 &=(a_2b_3-b_2a_3)\vec{i}-(a_1b_3+b_1a_3)\vec{j}+(a_1b_2+b_1a_2)\vec{k}
 \end{aligned}
 $$

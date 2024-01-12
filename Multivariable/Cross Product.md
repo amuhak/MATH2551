@@ -5,6 +5,27 @@ a \times b = ||a|| \ ||b|| \sin {\theta} \ n
 $$
 $\theta$ is the angle between $a$ and $b$, and $n$ is the **unit vector** perpendicular to the plane containing $a$ and $b$.
 
-
+$$
+\begin{aligned}
+a \times b &= 
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\ 
+u_1 & u_2 & u_3 \\
+v_1 & v_2 & v_3
+\end{vmatrix} \\ &= 
+\begin{bmatrix}
+u_2 & u_3 \\
+v_2 & v_3
+\end{bmatrix} \mathbf{i} -
+\begin{bmatrix}
+u_1 & u_3 \\
+v_1 & v_3 
+\end{bmatrix} \mathbf{j} + 
+\begin{bmatrix}
+u_1 & u_2 \\
+v_1 & v_2
+\end{bmatrix} \mathbf{k}
+\end{aligned}
+$$
 
 [[Formulas#Properties|Properties]]
