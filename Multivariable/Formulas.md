@@ -16,13 +16,11 @@ $$
 
 \begin{align*}
 {\vec{u}} \cdot ({\vec{v}} \times {\vec{w}}) &= 
-\left|
-\begin{array}
+\begin{vmatrix}
     u_1 & u_2 & u_3 \\
     v_1 & v_2 & v_3 \\
     w_1 & w_2 & w_3 
-\end{array}
-\right| \\
+\end{vmatrix}\\
 
 \vec{a} \cdot \vec{b} &= \vec{b} \cdot \vec{a}\\
 
