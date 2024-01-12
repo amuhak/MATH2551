@@ -59,6 +59,7 @@ $$
 $$
 
 ## Graphs
+
 $$\text{Cylinder: }ax^n+by^m=c,ax^n+bz^m=c,ay^n+bz^m=c$$
 $$\text{Elliptical Paraboloid: }\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}$$
 $$\text{Elliptical Cone: }\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z^2}{c^2}$$
