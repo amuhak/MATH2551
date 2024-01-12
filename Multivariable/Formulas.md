@@ -94,90 +94,84 @@ a(x-p_0)+b(y-p_1)+c(z-p_3)&=0\\
 \end{align*}
 $$
 
-  
+  $$
+\begin{align}
 
-$$
-    \begin{align}
+\left\|\int_a^b\vec{f}(t)d{t}\right\|&\leq\int_a^b\|\vec{f}(t)\|d{t}\\
 
-        \left\|\int_a^b\vec{f}(t)d{t}\right\| & \leq \int_a^b\|\vec{f}(t)\|d{t}                                                                                          \\
+L&=\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}dt\\
 
-        L                                     & =\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}dt                 \\
+&=\int_a^b||\vec{r}'(t)||dt\\
 
-                                              & =\int_a^b||\vec{r}'(t)||dt                                                                                               \\
+s(t)&=\int_{t_0}^t\sqrt{\left(\frac{dx}{d\tau}\right)^2+\left(\frac{dy}{d\tau}\right)^2+\left(\frac{dz}{d\tau}\right)^2}d\tau\\
 
-        s(t)                                  & =\int_{t_0}^t\sqrt{\left(\frac{dx}{d\tau}\right)^2+\left(\frac{dy}{d\tau}\right)^2+\left(\frac{dz}{d\tau}\right)^2}d\tau \\
+&=\int_{t_0}^t||\vec{r}'(\tau)||d\tau\\
 
-                                              & =\int_{t_0}^t||\vec{r}'(\tau)||d\tau                                                                                     \\
+\frac{ds}{dt}&=||\vec{v}(t)||\\
 
-        \frac{ds}{dt}                         & =||\vec{v}(t)||                                                                                                          \\
+\vec{T}(t)&=\frac{\vec{r}'(t)}{||\vec{r}'(t)||}=\frac{\vec{v}(t)}{||\vec{v}(t)||}\\
 
-        \vec{T}(t)                            & =\frac{\vec{r}'(t)}{||\vec{r}'(t)||}
+\kappa&=\left\|\frac{d\vec{T}}{ds}\right\|=\frac{||\vec{T}'(t)||}{||\vec{r}'(t)||}=\frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3}\\
 
-                                              & =\frac{\vec{v}(t)}{||\vec{v}(t)||}                                                                                       \\
+p&=\frac{1}{\kappa}\\
 
-        \kappa                                & =\left\|\frac{d\vec{T}}{ds}\right\|                                                                                      \\
+\vec{N}(t)&=\frac{\vec{T}'(t)}{||\vec{T}'(t)||}\\
 
-                                              & =\frac{||\vec{T}'(t)||}{||\vec{r}'(t)||}                                                                                 \\
+\vec{B}(t)&=\vec{T}(t)\times\vec{N}(t)\\
 
-                                              & =\frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3}                                                             \\
+\vec{a}&=a_T\vec{T}+a_N\vec{N}\\
 
-        p                                     & =\frac{1}{\kappa}                                                                                                        \\
+a_t&=\frac{d^2s}{dt^2}\\
 
-        \vec{N}(t)                            & =\frac{\vec{T}'(t)}{||\vec{T}'(t)||}                                                                                     \\
+&=\frac{d}{dt}||\vec{r}'(t)||\\
 
-        \vec{B}(t)                            & =\vec{T}(t)\times\vec{N}(t)                                                                                              \\
+a_N&=||\vec{T}'(t)||\cdot\frac{ds}{dt}\\
 
-        \vec{a}                               & =a_T\vec{T}+a_N\vec{N}                                                                                                   \\
+&=\kappa\left(\frac{ds}{dt}\right)^2\\
 
-        a_t                                   & =\frac{d^2s}{dt^2}                                                                                                       \\
+&=\kappa||\vec{r}'(t)||^2\\
 
-                                              & =\frac{d}{dt}||\vec{r}'(t)||                                                                                             \\
+&=\sqrt{||\vec{a}||^2-a_T^2}\\
 
-        a_N                                   & =||\vec{T}'(t)||\cdot\frac{ds}{dt}                                                                                       \\
+||\vec{a}||^2&=a_T^2+a_N^2\\
 
-                                              & =\kappa\left(\frac{ds}{dt}\right)^2                                                                                      \\
+\tau&=\frac{-d\vec{B}}{ds}\cdot\vec{N}'(t)\\
 
-                                              & =\kappa||\vec{r}'(t)||^2                                                                                                 \\
+&=\frac{\begin{vmatrix}\dot{x}&\dot{y}&\dot{z}\\
 
-                                              & =\sqrt{||\vec{a}||^2-a_T^2}                                                                                              \\
+\ddot{x}&\ddot{y}&\ddot{z}\\
 
-        ||\vec{a}||^2                         & =a_T^2+a_N^2                                                                                                             \\
+\dddot{x}&\dddot{y}&\dddot{z}\end{vmatrix}}
+{||\vec{r}'(t)\times\vec{r}''(t)||^2}\\ \\ \\ \\
 
-        \tau                                  & =\frac{-d\vec{B}}{ds}\cdot\vec{N}'(t)                                                                                    \\
+&=\frac{\vec{r}'(t)\cdot(\vec{r}''(t)\times\vec{r}'''(t))}{||\vec{r}'(t)\times\vec{r}''(t)||^2}\\
 
-                                              & =\frac{\begin{vmatrix} \dot{x}   & \dot{y}   & \dot{z}   \\
+\text{Projectile Motion:}\\
 
-                \ddot{x}  & \ddot{y}  & \ddot{z}  \\
+\text{MaxHeight}&=\frac{(v_0\sin(\theta))^2}{2g}\\
 
-                \dddot{x} & \dddot{y} & \dddot{z}\end{vmatrix}}{||\vec{r}'(t)\times\vec{r}''(t)||^2}                              \\
+\text{Range}&=\frac{v_0^2\sin(2\theta)}{g}\\
 
-                                              & =\frac{\vec{r}'(t)\cdot(\vec{r}''(t)\times\vec{r}'''(t))}{||\vec{r}'(t)\times\vec{r}''(t)||^2}                           \\
+\text{Flighttime}&=\frac{2v_0\sin(\theta)}{g}\\
 
-        \text{Projectile Motion: }                                                                                                                                       \\
+\text{Polarandcylindricalequations:}\\
 
-        \text{Max Height}                     & =\frac{(v_0\sin(\theta))^2}{2g}                                                                                          \\
+\vec{u_{r}}&=\cos{\theta}\vec{i}+\sin{\theta}\vec{j}\\
 
-        \text{Range}                          & =\frac{v_0^2\sin(2\theta)}{g}                                                                                            \\
+\vec{u_{\theta}}&=-\sin{\theta}\vec{i}+\cos{\theta}\vec{j}\\
 
-        \text{Flight time}                    & =\frac{2v_0\sin(\theta)}{g}                                                                                              \\
+\vec{r}(t)&=r\vec{u_r}\\
 
-        \text{Polar and cylindrical equations: }                                                                                                                         \\
+\vec{r}'(t)&=\dot{r}\vec{u_r}+r\dot{\theta}\vec{u_{\theta}}\\
 
-        \vec{u_{r}}                           & =\cos{\theta}\vec{i}+\sin{\theta}\vec{j}                                                                                 \\
+\vec{r}''(t)&=(\ddot{r}-r\dot{\theta}^2)\vec{u_r}+(r\ddot{\theta}+2\dot{r}\dot{\theta})\vec{u_{\theta}}\\
 
-        \vec{u_{\theta}}                      & =-\sin{\theta}\vec{i}+\cos{\theta}\vec{j}                                                                                \\
+\vec{r}(t)&=r\vec{u_r}+z\vec{k}\\
 
-        \vec{r}(t)                            & =r\vec{u_r}                                                                                                              \\
+\vec{r}'(t)&=\dot{r}\vec{u_r}+r\dot{\theta}\vec{u_{\theta}}+\dot{z}\vec{k}\\
 
-        \vec{r}'(t)                           & =\dot{r}\vec{u_r}+r\dot{\theta}\vec{u_{\theta}}                                                                          \\
+\vec{r}''(t)&=(\ddot{r}-r\dot{\theta}^2)\vec{u_r}+(r\ddot{\theta}+2\dot{r}\dot{\theta})\vec{u_{\theta}}+\ddot{z}\vec{k}\\
 
-        \vec{r}''(t)                          & =(\ddot{r}-r\dot{\theta}^2)\vec{u_r}+(r\ddot{\theta}+2\dot{r}\dot{\theta})\vec{u_{\theta}}                               \\
+\end{align}
 
-        \vec{r}(t)                            & =r\vec{u_r}+z\vec{k}                                                                                                     \\
-
-        \vec{r}'(t)                           & =\dot{r}\vec{u_r}+r\dot{\theta}\vec{u_{\theta}}+\dot{z}\vec{k}                                                           \\
-
-        \vec{r}''(t)                          & =(\ddot{r}-r\dot{\theta}^2)\vec{u_r}+(r\ddot{\theta}+2\dot{r}\dot{\theta})\vec{u_{\theta}}+\ddot{z}\vec{k}               \\
-
-    \end{align}
 $$
