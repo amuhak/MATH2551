@@ -2,6 +2,14 @@
   "workspace:export-pdf": [
     {
       "modifiers": [
+        "Mod"
+      ],
+      "key": "P"
+    }
+  ],
+  "command-palette:open": [
+    {
+      "modifiers": [
         "Mod",
         "Shift"
       ],

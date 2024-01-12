@@ -102,3 +102,4 @@ $\vec{r}''(t)=(\ddot{r}-r\dot{\theta}^2)\vec{u_r}+(r\ddot{\theta}+2\dot{r}\dot{\
 $\vec{r}(t)=r\vec{u_r}+z\vec{k}$
 $\vec{r}'(t)=\dot{r}\vec{u_r}+r\dot{\theta}\vec{u_{\theta}}+\dot{z}\vec{k}$
 $\vec{r}''(t)=(\ddot{r}-r\dot{\theta}^2)\vec{u_r}+(r\ddot{\theta}+2\dot{r}\dot{\theta})\vec{u_{\theta}}+\ddot{z}\vec{k}$
+
