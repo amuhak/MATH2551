@@ -32,5 +32,15 @@ To find it cross 2 parallel sides.
 Say you have parallelogram $ABCD$ the area = $\vec{AB} \times \vec{AD}$ 
 
 ## Area of a parallelepiped
-find the triple scalar product
+Find the triple scalar product,
+$$
+(\vec{u} \times \vec{v}) \cdot \vec{w} = 
+\begin{vmatrix}
+u_1 &u_2&u_3\\
+v_1 &v_2&v_3\\
+w_1 &w_2&w_3\\
+\end{vmatrix}
+$$
+$\vec{u},\vec{v},\vec{w}$ are given by:
+![[Triple Scalar Product.png|400]]
 [[Formulas#Properties|Properties]]
