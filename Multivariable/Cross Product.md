@@ -27,5 +27,10 @@ v_1 & v_2
 \end{bmatrix} \mathbf{k}
 \end{aligned}
 $$
+## Area of a parallelogram
+To find it cross 2 parallel sides. 
+Say you have parallelogram $ABCD$ the area = $\vec{AB} \times \vec{AD}$ 
 
+## Area of a parallelepiped
+find the triple scalar product
 [[Formulas#Properties|Properties]]
