@@ -6,3 +6,4 @@ and the component equations,
 $$
 A(x-x_0)+B(y-y_0)+C(z-z_0)=0
 $$
+
