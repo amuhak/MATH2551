@@ -9,3 +9,10 @@ $$
 
 Given a line $L$ and a point $P$ in a plain you can find the equation of the plane, 
 Take a point $Q$ on the line. Now fine $\vec{QP}$ and the direction vector of the line $L$ (call that $d$). Now the normal $\vec{n}= \vec{QP} \times d$. Then we can use the formula $A(x-x_0)+B(y-y_0)+C(z-z_0)=0$ to get the equation. 
+
+
+# Distance from a Point to a Plane
+The distance from a point $S$ to a plane which contains point $P$ and has normal vector $n$ is,
+$$
+d=\left| \vec{PS} \cdot \dfrac{n}{||n||} \right|
+$$
