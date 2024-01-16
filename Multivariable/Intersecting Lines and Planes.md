@@ -1,0 +1,4 @@
+# Parallel
+# Coincident 
+# Skew 
+# Intersecting.
