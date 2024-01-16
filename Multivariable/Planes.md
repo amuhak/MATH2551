@@ -1,4 +1,4 @@
-The plane through the point $P_0$ normal to $\vec{n}$ is given by the vector equation,
+The plane through the point $P_0$ normal to $\vec{n} = Ai+Bj+Ck$ is given by the vector equation,
 $$
 \vec{n} \cdot \vec{P_0P}=0
 $$
