@@ -29,7 +29,7 @@ v_1 & v_2
 $$
 ## Area of a parallelogram
 To find it cross 2 parallel sides. 
-Say you have parallelogram $ABCD$ the area = $\vec{AB} \times \vec{AD}$ 
+Say you have parallelogram $ABCD$ the area = $|\vec{AB} \times \vec{AD}|$ 
 
 ## Area of a parallelepiped
 Find the triple scalar product,
