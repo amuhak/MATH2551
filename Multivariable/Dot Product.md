@@ -4,7 +4,7 @@ $$u \cdot v = u_1v_1+u_2v_2+u_3v_3$$
 The Angle Between Two Vectors $u$ and $v$ is, 
 $$
 \theta = \cos ^{-1} \left( 
-\dfrac{\vec{u} \cdot \vec{u}}{||\vec{u}|| \ ||\vec{v}||}
+\dfrac{\vec{u} \cdot \vec{v}}{||\vec{u}|| \ ||\vec{v}||}
 \right)
 $$
 Dot product of two vectors $u$ and $v$ is also given by, 
