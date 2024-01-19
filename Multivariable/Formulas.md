@@ -79,7 +79,7 @@ Hyperbolic Paraboloid: $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$
 
 Line through $P(p_0,p_1,p_2)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$: 
 $$x=at+p_0, y=bt+p_1, z=ct+p_2$$
-$$<at+p_0,bt+p_1,ct+p_3>=<a,b,c>t+<p_0,p_1,p_2> \forall -\infty<t<\infty$$
+$$\langle at+p_0,bt+p_1,ct+p_3 \rangle=\langle a,b,c\rangle t+\langle p_0,p_1,p_2\rangle \forall -\infty<t<\infty$$
 Distance between line and point $Q: d=\frac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$
 Line through $P(p_0,p_1,p_2)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\vec{k}:$
 $$a(x-p_0)+b(y-p_1)+c(z-p_3)=0$$
