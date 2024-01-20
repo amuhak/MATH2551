@@ -16,3 +16,8 @@ The distance from a point $S$ to a plane which contains point $P$ and has normal
 $$
 d=\left| \vec{PS} \cdot \dfrac{n}{||n||} \right|
 $$
+# Angle Between Two Planes
+$\vec{n_1}$ and $\vec{n_2}$ are the normal vectors for the $2$ planes. 
+$$
+\cos \left(\theta \right) = \dfrac{\left|\vec{n_1}\cdot\vec{n_2}\right|}{\left| \left| \vec{n_1} \right| \right| \ \left| \left| \vec{n_2} \right| \right|}
+$$

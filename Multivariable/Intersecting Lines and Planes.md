@@ -5,7 +5,6 @@ Compare direction vectors, if they are multiples of each other they are parallel
 If the lines a parallel and they share points they are coincident. (They are the same line)
 ## Skew 
 2 lines that are not intersecting and also are not parallel. 
-
 ## Intersecting
 Equate the 2 lines, if you get a solution you have intersecting lines. 
 
