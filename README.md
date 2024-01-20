@@ -12,7 +12,7 @@ Feel free to make a pull request to contribute! I will take care of compiling th
 
 ***
 # How To Run
-[Download and install obsidian](https://obsidian.md/download) and open this repo in it. (_**highly Recommended for the GIFs**_)
+[Download and install obsidian](https://obsidian.md/download) and open this repo in it. (_**highly Recommended**_)
 
 **OR**
 
