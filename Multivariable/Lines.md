@@ -3,6 +3,7 @@ $$
 r(t) = r_0 + t \vec{v}
 $$
 Where $r$ is the position vector of the point $P$ that is on $L$ and $r_0$ is the position vector of $P_0$.
+
 ![[Parametric Equations of a Line.png]]
 
 # Distance from a Point to a Line
