@@ -1,4 +1,4 @@
-# MATH1554
+# MATH2554
 
 The most important part of MATH 2551 multivariable calculus is calculating the volume of an ice cream cone. Yep, ice cream cones. Just ignore all that partial derivative stuff and skip straight to the ice cream cone section. We must use spherical coordinates, the chaddest coordinate system in MATH 2551 multivariable calculus in order to solve the ice cream cone problem. You have a problem with ice cream cones? Go back to single variable calculus you \_\_\_\_\_\_\_\_
 
