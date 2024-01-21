@@ -18,3 +18,4 @@ The direction of motion is the direction of the velocity vector.
 
 ![[Vector Functions Integral.png]]
 ![[Vector Functions Definite Integral.png]]
+![[Vector Functions Poperties.png]]
