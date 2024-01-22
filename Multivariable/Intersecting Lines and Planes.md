@@ -5,6 +5,9 @@ Compare direction vectors, if they are multiples of each other they are parallel
 If the lines a parallel and they share points they are coincident. (They are the same line)
 ## Skew 
 2 lines that are not intersecting and also are not parallel. 
+Distance between two skew lines:
+$\vec{v}_1$ and $\vec{v}_2$ are the direction vectors and $P$ and $S$ are points on the lines $L_1$ and $L_2$ respectively.
+$$\text{Length} = \vec{PS} \cdot \frac{\vec{v}_1 \times \vec{v}_2}{\|\vec{v}_1 \times \vec{v}_2\|}$$
 ## Intersecting
 Equate the 2 lines, if you get a solution you have intersecting lines. 
 
