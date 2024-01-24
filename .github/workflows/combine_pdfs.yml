@@ -1,0 +1,30 @@
+on:
+  push:
+    branches:
+      - main # Adjust this based on your repository's main branch
+
+jobs:
+  combine_pdfs:
+    runs-on: ubuntu-latest
+    name: Combine PDFs
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Find PDF files
+        id: findpdf
+        run: |
+          find . -name 'formual.*.pdf' -type f > pdf_list.txt
+
+      - name: Combine PDFs
+        id: combine
+        uses: amoeba/combine-pdf-action@v1
+        with:
+          path: .
+          files: $(cat pdf_list.txt | tr '\n' ' ')
+
+      - name: Upload combined pdf
+        uses: actions/upload-artifact@v2
+        with:
+          name: combined-pdf
+          path: combined.pdf
