@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main # Adjust this based on your repository's main branch
+      - main
 
 jobs:
   combine_pdfs:
@@ -18,14 +18,10 @@ jobs:
 
       - name: Combine PDFs
         id: combine
-        uses: amoeba/combine-pdf-action@v1
-        with:
-          path: .
-          files: $(cat pdf_list.txt | tr '\n' ' ')
+        run: python combine_pdfs.py # Replace with the actual script/command to combine PDFs
 
       - name: Upload combined pdf
         uses: actions/upload-artifact@v2
         with:
           name: combined-pdf
           path: combined.pdf
-
