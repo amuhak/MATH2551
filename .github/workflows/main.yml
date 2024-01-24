@@ -1,0 +1,2 @@
+- name: combine-pdfs
+  uses: amoeba/combine-pdf-action@v1
