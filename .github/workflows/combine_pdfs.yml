@@ -2,7 +2,8 @@ on:
   push:
     branches:
       - main
-
+env:
+  ACTIONS_STEP_DEBUG: true
 jobs:
   combine_pdfs:
     runs-on: ubuntu-latest
