@@ -17,7 +17,7 @@ jobs:
       - name: Find PDF files
         id: findpdf
         run: |
-          find . -name 'formual.*.pdf' -type f > pdf_list.txt
+          find . -name "Formula*.pdf" -type f > pdf_list.txt
 
       - name: Combine PDFs
         id: combine
