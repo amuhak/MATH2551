@@ -11,6 +11,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Install PyPDF2
+        run: pip install PyPDF2
+
       - name: Find PDF files
         id: findpdf
         run: |
