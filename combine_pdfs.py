@@ -17,7 +17,7 @@ if __name__ == "__main__":
         pdf_list = [line.strip() for line in file]
 
     # Specify the output path for the combined PDF
-    output_path = "combined.pdf"
+    output_path = "AllFormulaSheets.pdf"
     pdf_list.sort()
 
     # Combine PDFs
