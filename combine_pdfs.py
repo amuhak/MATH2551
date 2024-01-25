@@ -18,6 +18,7 @@ if __name__ == "__main__":
 
     # Specify the output path for the combined PDF
     output_path = "combined.pdf"
+    output_path.sort()
 
     # Combine PDFs
     combine_pdfs(pdf_list, output_path)
