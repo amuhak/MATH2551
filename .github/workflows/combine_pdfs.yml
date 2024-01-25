@@ -24,27 +24,9 @@ jobs:
 
       - name: Combine PDFs
         id: combine
-        run: python combine_pdfs.py # Replace with the actual script/command to combine PDFs
-
-      - name: Generate Unique Identifier
-        id: generate_identifier
-        run: echo "::set-output name=identifier::$(shasum combined.pdf | cut -c 1-40)"
-
-      - name: Compare Identifiers
-        id: compare_identifiers
-        run: |
-          LAST_RELEASE_IDENTIFIER=$(<last_release_identifier.txt)
-          CURRENT_IDENTIFIER=${{ steps.generate_identifier.outputs.identifier }}
-
-          if [ "$LAST_RELEASE_IDENTIFIER" == "$CURRENT_IDENTIFIER" ]; then
-            echo "Combined PDF has not changed. Skipping release."
-            exit 0
-          fi
-
-          echo $CURRENT_IDENTIFIER > last_release_identifier.txt
+        run: python combine_pdfs.py 
 
       - name: Upload combined pdf
-        if: steps.compare_identifiers.outputs.result == 'success'
         uses: actions/upload-artifact@v2
         with:
           name: combined-pdf
@@ -58,7 +40,6 @@ jobs:
         run: cat Release.txt
       - name: Release
         uses: softprops/action-gh-release@v1
-        if: steps.compare_identifiers.outputs.result == 'success'
         with:
           files: combined.pdf
       
