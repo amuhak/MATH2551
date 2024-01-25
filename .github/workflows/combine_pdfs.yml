@@ -24,18 +24,6 @@ jobs:
       - name: Upload combined pdf
         uses: actions/upload-artifact@v2
         with:
-          name: combined-pdf
-          path: combined.pdf
-
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Build
-        run: echo ${{ github.sha }} > Release.txt
-      - name: Test
-        run: cat Release.txt
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: combined.pdf
+          name: AllFormulaSheets
+          path: AllFormulaSheets.pdf
       
