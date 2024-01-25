@@ -2,8 +2,10 @@ on:
   push:
     branches:
       - main
+
 env:
   ACTIONS_STEP_DEBUG: true
+
 jobs:
   combine_pdfs:
     runs-on: ubuntu-latest
@@ -24,28 +26,39 @@ jobs:
         id: combine
         run: python combine_pdfs.py # Replace with the actual script/command to combine PDFs
 
+      - name: Generate Unique Identifier
+        id: generate_identifier
+        run: echo "::set-output name=identifier::$(shasum combined.pdf | cut -c 1-40)"
+
+      - name: Compare Identifiers
+        id: compare_identifiers
+        run: |
+          LAST_RELEASE_IDENTIFIER=$(<last_release_identifier.txt)
+          CURRENT_IDENTIFIER=${{ steps.generate_identifier.outputs.identifier }}
+
+          if [ "$LAST_RELEASE_IDENTIFIER" == "$CURRENT_IDENTIFIER" ]; then
+            echo "Combined PDF has not changed. Skipping release."
+            exit 0
+          fi
+
+          echo $CURRENT_IDENTIFIER > last_release_identifier.txt
+
       - name: Upload combined pdf
+        if: steps.compare_identifiers.outputs.result == 'success'
         uses: actions/upload-artifact@v2
         with:
           name: combined-pdf
           path: combined.pdf
 
-      - name: Configure Git
-        run: |
-          git config --global user.email "actions@github.com"
-          git config --global user.name "GitHub Actions"
-          git config --list  # Display git configuration for debugging
-
-      - name: Checkout main branch
-        run: git checkout main
-
-      - name: Download Artifact
-        uses: actions/download-artifact@v2
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Build
+        run: echo ${{ github.sha }} > Release.txt
+      - name: Test
+        run: cat Release.txt
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        if: steps.compare_identifiers.outputs.result == 'success'
         with:
-          name: combined-pdf
-
-      - name: Commit and push changes
-        run: |
-          git add combined.pdf
-          git commit -m "Committing combined.pdf"
-          git push origin main
+          files: combined.pdf
+      
