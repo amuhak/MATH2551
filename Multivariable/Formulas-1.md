@@ -88,7 +88,9 @@ Arc Length, $s(t)$ is the function for arc length:
 $$
 \begin{aligned}L&=\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}dt&=\int_a^b||\vec{r}'(t)||dt \\
 s(t)&=\int_{t_0}^t\sqrt{\left(\frac{dx}{d\tau}\right)^2+\left(\frac{dy}{d\tau}\right)^2+\left(\frac{dz}{d\tau}\right)^2}d\tau&=\int_{t_0}^t||\vec{r}'(\tau)||d\tau \end{aligned}$$
+Speed: 
 $$\frac{ds}{dt}=||\vec{v}(t)||$$
+The unit tangent vector:
 $$\vec{T}(t)=\frac{\vec{r}'(t)}{||\vec{r}'(t)||}=\frac{\vec{v}(t)}{||\vec{v}(t)||}$$
 $$\kappa=\left\|\frac{d\vec{T}}{ds}\right\|=\frac{||\vec{T}'(t)||}{||\vec{r}'(t)||}=\frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3}$$
 $$p=\frac{1}{\kappa}$$
