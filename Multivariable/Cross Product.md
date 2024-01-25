@@ -43,4 +43,4 @@ w_1 &w_2&w_3\\
 $$
 $\vec{u},\vec{v},\vec{w}$ are given by:
 ![[Triple Scalar Product.png|400]]
-[[Formulas#Properties|Properties]]
+[[Formulas-1#Properties|Properties]]

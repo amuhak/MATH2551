@@ -78,13 +78,13 @@ Hyperboloid of 2 sheets: $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$
 Hyperbolic Paraboloid: $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$
 
 Line through $P(p_0,p_1,p_2)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$: 
-$$x=at+p_0, y=bt+p_1, z=ct+p_2$$
+$$x=at+p_0 \quad y=bt+p_1 \quad z=ct+p_2$$
 $$\langle at+p_0,bt+p_1,ct+p_3 \rangle=\langle a,b,c\rangle t+\langle p_0,p_1,p_2\rangle \forall -\infty<t<\infty$$
-Distance between line and point $Q: d=\frac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$
+Distance between line and point $Q: d=\dfrac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$
 Line through $P(p_0,p_1,p_2)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\vec{k}:$
 $$a(x-p_0)+b(y-p_1)+c(z-p_3)=0$$
-Angle between planes: $\theta=\cos^{-1}{\left(\left|\frac{\vec{n_1}\cdot\vec{n_2}}{||\vec{n_1}||\cdot||\vec{n_2}||}\right|\right)}$
-Distance between Point $S$ and plane: $d=\left|\vec{PS}\cdot\frac{\vec{n}}{||\vec{n}||}\right|$
+Angle between planes: $\theta=\cos^{-1}{\left(\left|\dfrac{\vec{n_1}\cdot\vec{n_2}}{||\vec{n_1}||\cdot||\vec{n_2}||}\right|\right)}$
+Distance between Point $S$ and a plane: $d=\left|\vec{PS}\cdot\dfrac{\vec{n}}{||\vec{n}||}\right|$
 $$\left\|\int_a^b\vec{f}(t)d{t}\right\|\leq\int_a^b\|\vec{f}(t)\|d{t}$$
 $$L=\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}dt=\int_a^b||\vec{r}'(t)||dt$$
 $$s(t)=\int_{t_0}^t\sqrt{\left(\frac{dx}{d\tau}\right)^2+\left(\frac{dy}{d\tau}\right)^2+\left(\frac{dz}{d\tau}\right)^2}d\tau=\int_{t_0}^t||\vec{r}'(\tau)||d\tau$$

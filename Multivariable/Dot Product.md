@@ -19,4 +19,4 @@ $$
 $$
 \text{comp}_b a = \dfrac{a \cdot b}{||b||} =||a|| \cos{\theta}
 $$
-[[Formulas#Properties|Properties]]
+[[Formulas-1#Properties|Properties]]
