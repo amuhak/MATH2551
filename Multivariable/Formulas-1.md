@@ -94,7 +94,7 @@ The unit tangent vector:
 $$\vec{T}(t)=\frac{\vec{r}'(t)}{||\vec{r}'(t)||}=\frac{\vec{v}(t)}{||\vec{v}(t)||}$$
 $$
 \begin{align*}
-\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \\
+\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{} \\
 &= \frac{||\vec{T}'(t)||}{||\vec{r}'(t)||} \\
 &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} \\
 \kappa &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} 
