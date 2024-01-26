@@ -78,13 +78,16 @@ Hyperbolic Paraboloid: $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$
 Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$: 
 $$x=at+p_1 \quad y=bt+p_2 \quad z=ct+p_3$$
 $$\langle at+p_1,bt+p_2,ct+p_3 \rangle=\langle a,b,c\rangle t+\langle p_1,p_2,p_3\rangle \text{ }\forall \text{ } t \in \mathbb{R}$$
-Distance between line and point $Q: d=\dfrac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$
+Distance between line and point: $$Q: d=\dfrac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$$
 Line through $P(p_1,p_2,p_3)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\vec{k}:$
 $$a(x-p_1)+b(y-p_2)+c(z-p_3)=0$$
-Angle between planes: $\theta=\cos^{-1}{\left(\left|\dfrac{\vec{n_1}\cdot\vec{n_2}}{||\vec{n_1}||\cdot||\vec{n_2}||}\right|\right)}$
-Distance between Point $S$ and a plane: $d=\left|\vec{PS}\cdot\dfrac{\vec{n}}{||\vec{n}||}\right|$
-The triangle property of integrals: $\left\|\int_a^b\vec{f}(t)d{t}\right\|\leq\int_a^b\|\vec{f}(t)\|d{t}$
-Arc Length, $s(t)$ is the function for arc length:
+Angle between planes: 
+$$\theta=\cos^{-1}{\left(\left|\dfrac{\vec{n_1}\cdot\vec{n_2}}{||\vec{n_1}||\cdot||\vec{n_2}||}\right|\right)}$$
+Distance between Point $S$ and a plane: 
+$$d=\left|\vec{PS}\cdot\dfrac{\vec{n}}{||\vec{n}||}\right|$$
+The triangle property of integrals:
+$$\left\|\int_a^b\vec{f}(t)d{t}\right\|\leq\int_a^b\|\vec{f}(t)\|d{t}$$
+Arc Length $(s(t))$:
 $$
 \begin{aligned}L&=\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}dt&=\int_a^b||\vec{r}'(t)||dt \\
 s(t)&=\int_{t_0}^t\sqrt{\left(\frac{dx}{d\tau}\right)^2+\left(\frac{dy}{d\tau}\right)^2+\left(\frac{dz}{d\tau}\right)^2}d\tau&=\int_{t_0}^t||\vec{r}'(\tau)||d\tau \end{aligned}$$
@@ -101,8 +104,6 @@ $$
 \kappa &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} 
 \end{align*}
 $$
-
-$$\kappa=\left\|\frac{d\vec{T}}{ds}\right\|=\frac{||\vec{T}'(t)||}{||\vec{r}'(t)||}=\frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3}$$
 Radius of curvature:
 $$p=\frac{1}{\kappa}$$
 Principal Normal Vector $(N(t))$:
