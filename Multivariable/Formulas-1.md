@@ -95,14 +95,15 @@ $$\vec{T}(t)=\frac{\vec{r}'(t)}{||\vec{r}'(t)||}=\frac{\vec{v}(t)}{||\vec{v}(t)|
 The curvature function:
 $$
 \begin{align*}
-\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{ T is the unit vector, s is the arc length } \\
-&= \frac{||\vec{T}'(t)||}{||\vec{v}'(t)||} \text{ $\frac{ds}{dt} = v$}\\
+\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{ $T$ is the unit tangent vector, $s$ is the arc length } \\
+&= \frac{||\vec{T}'(t)||}{||\vec{v}(t)||} \quad \text{ note: $\frac{ds}{dt} = v$}\\
 &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} \\
 \kappa &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} 
 \end{align*}
 $$
 
 $$\kappa=\left\|\frac{d\vec{T}}{ds}\right\|=\frac{||\vec{T}'(t)||}{||\vec{r}'(t)||}=\frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3}$$
+Radius of curvature:
 $$p=\frac{1}{\kappa}$$
 $$\vec{N}(t)=\frac{\vec{T}'(t)}{||\vec{T}'(t)||}$$
 $$\vec{B}(t)=\vec{T}(t)\times\vec{N}(t)$$
