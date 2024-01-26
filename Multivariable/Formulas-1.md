@@ -90,7 +90,7 @@ $$
 s(t)&=\int_{t_0}^t\sqrt{\left(\frac{dx}{d\tau}\right)^2+\left(\frac{dy}{d\tau}\right)^2+\left(\frac{dz}{d\tau}\right)^2}d\tau&=\int_{t_0}^t||\vec{r}'(\tau)||d\tau \end{aligned}$$
 Speed: 
 $$\frac{ds}{dt}=||\vec{v}(t)||$$
-The unit tangent vector:
+The unit tangent vector $(T(t))$:
 $$\vec{T}(t)=\frac{\vec{r}'(t)}{||\vec{r}'(t)||}=\frac{\vec{v}(t)}{||\vec{v}(t)||}$$
 The curvature function:
 $$
@@ -105,12 +105,12 @@ $$
 $$\kappa=\left\|\frac{d\vec{T}}{ds}\right\|=\frac{||\vec{T}'(t)||}{||\vec{r}'(t)||}=\frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3}$$
 Radius of curvature:
 $$p=\frac{1}{\kappa}$$
-Principal Normal Vector:
+Principal Normal Vector $(N(t))$:
 $$\vec{N}(t)=\frac{\vec{T}'(t)}{||\vec{T}'(t)||}$$
+Binormal vector $(B(t))$:
 $$\vec{B}(t)=\vec{T}(t)\times\vec{N}(t)$$
 $$\vec{a}=a_T\vec{T}+a_N\vec{N}$$
 $$a_t=\frac{d^2s}{dt^2}=\frac{d}{dt}||\vec{r}'(t)||$$
-$$a_N=||\vec{T}'(t)||\cdot\frac{ds}{dt}=\kappa\left(\frac{ds}{dt}\right)^2=\kappa||\vec{r}'(t)||^2=\sqrt{||\vec{a}||^2-a_T^2}$$
 ## Projectile Motion:
 $\text{Max Height} = \frac{(v_0 \sin(\theta))^2}{2g}$
 $\text{Range} = \frac{v_0^2 \sin(2\theta)}{g}$
