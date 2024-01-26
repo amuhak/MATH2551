@@ -101,7 +101,6 @@ $$
 \kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{ $T$ is the unit tangent vector, $s$ is the arc length } \\
 &= \frac{||\vec{T}'(t)||}{||\vec{v}(t)||} \quad \text{ note: $\frac{ds}{dt} = v$}\\
 &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} \\
-\kappa &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} 
 \end{align*}
 $$
 Radius of curvature:
@@ -110,8 +109,7 @@ Principal Normal Vector $(N(t))$:
 $$\vec{N}(t)=\frac{\vec{T}'(t)}{||\vec{T}'(t)||}$$
 Binormal vector $(B(t))$:
 $$\vec{B}(t)=\vec{T}(t)\times\vec{N}(t)$$
-$$\vec{a}=a_T\vec{T}+a_N\vec{N}$$
-$$a_t=\frac{d^2s}{dt^2}=\frac{d}{dt}||\vec{r}'(t)||$$
+
 ## Projectile Motion:
 $\text{Max Height} = \frac{(v_0 \sin(\theta))^2}{2g}$
 $\text{Range} = \frac{v_0^2 \sin(2\theta)}{g}$
