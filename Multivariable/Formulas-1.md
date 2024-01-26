@@ -111,8 +111,6 @@ $$\vec{B}(t)=\vec{T}(t)\times\vec{N}(t)$$
 $$\vec{a}=a_T\vec{T}+a_N\vec{N}$$
 $$a_t=\frac{d^2s}{dt^2}=\frac{d}{dt}||\vec{r}'(t)||$$
 $$a_N=||\vec{T}'(t)||\cdot\frac{ds}{dt}=\kappa\left(\frac{ds}{dt}\right)^2=\kappa||\vec{r}'(t)||^2=\sqrt{||\vec{a}||^2-a_T^2}$$
-$$||\vec{a}||^2=a_T^2+a_N^2$$
-
 ## Projectile Motion:
 $\text{Max Height} = \frac{(v_0 \sin(\theta))^2}{2g}$
 $\text{Range} = \frac{v_0^2 \sin(2\theta)}{g}$
