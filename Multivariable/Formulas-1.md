@@ -92,9 +92,10 @@ Speed:
 $$\frac{ds}{dt}=||\vec{v}(t)||$$
 The unit tangent vector:
 $$\vec{T}(t)=\frac{\vec{r}'(t)}{||\vec{r}'(t)||}=\frac{\vec{v}(t)}{||\vec{v}(t)||}$$
+The curvature function:
 $$
 \begin{align*}
-\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{} \\
+\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{ T is unit vector, s is arc length } \\
 &= \frac{||\vec{T}'(t)||}{||\vec{r}'(t)||} \\
 &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} \\
 \kappa &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} 
