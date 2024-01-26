@@ -105,6 +105,7 @@ $$
 $$\kappa=\left\|\frac{d\vec{T}}{ds}\right\|=\frac{||\vec{T}'(t)||}{||\vec{r}'(t)||}=\frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3}$$
 Radius of curvature:
 $$p=\frac{1}{\kappa}$$
+Principal Normal Vector:
 $$\vec{N}(t)=\frac{\vec{T}'(t)}{||\vec{T}'(t)||}$$
 $$\vec{B}(t)=\vec{T}(t)\times\vec{N}(t)$$
 $$\vec{a}=a_T\vec{T}+a_N\vec{N}$$
