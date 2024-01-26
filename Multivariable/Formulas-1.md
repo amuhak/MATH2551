@@ -112,23 +112,9 @@ $$\vec{a}=a_T\vec{T}+a_N\vec{N}$$
 $$a_t=\frac{d^2s}{dt^2}=\frac{d}{dt}||\vec{r}'(t)||$$
 $$a_N=||\vec{T}'(t)||\cdot\frac{ds}{dt}=\kappa\left(\frac{ds}{dt}\right)^2=\kappa||\vec{r}'(t)||^2=\sqrt{||\vec{a}||^2-a_T^2}$$
 $$||\vec{a}||^2=a_T^2+a_N^2$$
-$$\tau=\frac{-d\vec{B}}{ds}\cdot\vec{N}'(t)=\frac{\begin{vmatrix} \dot{x}& \dot{y} & \dot{z}\\
-\ddot{x} & \ddot{y} & \ddot{z}\\
-\dddot{x} & \dddot{y} & \dddot{z}  \end{vmatrix}}{||\vec{r}'(t)\times\vec{r}''(t)||^2}=\frac{\vec{r}'(t)\cdot(\vec{r}''(t)\times\vec{r}'''(t))}{||\vec{r}'(t)\times\vec{r}''(t)||^2}$$
+
 ## Projectile Motion:
 $\text{Max Height} = \frac{(v_0 \sin(\theta))^2}{2g}$
 $\text{Range} = \frac{v_0^2 \sin(2\theta)}{g}$
 $\text{Flight Time} = \frac{2v_0 \sin(\theta)}{g}$
-## Polar and cylindrical equations:
-$$
-\begin{aligned}
-\vec{u_{r}} &= \cos{\theta}\vec{i} + \sin{\theta}\vec{j} \\
-\vec{u_{\theta}} &= -\sin{\theta}\vec{i} + \cos{\theta}\vec{j} \\
-\vec{r}(t) &= r\vec{u_r} \\
-\vec{r}'(t) &= \dot{r}\vec{u_r} + r\dot{\theta}\vec{u_{\theta}} \\
-\vec{r}''(t) &= (\ddot{r} - r\dot{\theta}^2)\vec{u_r} + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\vec{u_{\theta}} \\
-\vec{r}(t) &= r\vec{u_r} + z\vec{k} \\
-\vec{r}'(t) &= \dot{r}\vec{u_r} + r\dot{\theta}\vec{u_{\theta}} + \dot{z}\vec{k} \\
-\vec{r}''(t) &= (\ddot{r} - r\dot{\theta}^2)\vec{u_r} + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\vec{u_{\theta}} + \ddot{z}\vec{k} \\
-\end{aligned}
-$$
+
