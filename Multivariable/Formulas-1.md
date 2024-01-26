@@ -109,9 +109,7 @@ Principal Normal Vector $(N(t))$:
 $$\vec{N}(t)=\frac{\vec{T}'(t)}{||\vec{T}'(t)||}$$
 Binormal vector $(B(t))$:
 $$\vec{B}(t)=\vec{T}(t)\times\vec{N}(t)$$
-
 ## Projectile Motion:
 $\text{Max Height} = \frac{(v_0 \sin(\theta))^2}{2g}$
 $\text{Range} = \frac{v_0^2 \sin(2\theta)}{g}$
 $\text{Flight Time} = \frac{2v_0 \sin(\theta)}{g}$
-
