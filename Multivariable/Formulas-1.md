@@ -99,7 +99,7 @@ The curvature function $(\kappa(t))$:
 $$
 \begin{align*}
 \kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{ $T$ is the unit tangent vector, $s$ is the arc length } \\
-&= \frac{||\vec{T}'(t)||}{||\vec{v}(t)||} \quad \text{ note: $\frac{ds}{dt} = v$}\\
+&= \frac{||\vec{T}'(t)||}{||\vec{v}(t)||} \quad \text{ note: $\frac{ds}{dt} = ||v||$}\\
 &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} \\
 \end{align*}
 $$
