@@ -1,1 +1,2 @@
-$$\dfrac{\partial f}{\partial x} = $$
+$$\left. \dfrac{\partial f}{\partial x} \right|_{x_0,y_0} = \lim_{h \rightarrow0} \dfrac{f(x_0+h,y_0)-f(c_0,y_0)}{h}$$
+Basically the derivate of the variable you are differentiating with respect to and treat all the other variables as constants.    
