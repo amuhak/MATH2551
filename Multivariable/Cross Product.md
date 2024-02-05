@@ -31,7 +31,7 @@ $$
 To find it cross 2 parallel sides. 
 Say you have parallelogram $ABCD$ the area = $|\vec{AB} \times \vec{AD}|$ 
 
-## Area of a parallelepiped
+## Volume of a parallelepiped
 Find the triple scalar product,
 $$
 (\vec{u} \times \vec{v}) \cdot \vec{w} = 
