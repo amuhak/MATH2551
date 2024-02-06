@@ -13,28 +13,25 @@ jobs:
       - name: Install PyPDF2
         run: pip install PyPDF2
 
-      - name: Find PDF files
-        id: findpdf
-        run: |
-          find . -name "Formula*.pdf" -type f > pdf_list.txt
-
-      - name: Combine PDFs
-        id: combine
-        run: python combine_pdfs.py 
-
-
-
       - uses: actions/checkout@v3
       - name: Commit PDF
         run: |
+          find . -name "Formula*.pdf" -type f > pdf_list.txt
+          python combine_pdfs.py
           rm pdf_list.txt
-           ls
+          ls
           git config --global user.name 'Amulya Jain'
           git config --global user.email 'amuhak@users.noreply.github.com'
           git add AllFormulaSheets.pdf
           git commit -am "Automatic PDF combine"
-          git push           
+          git push  
         
+      - name: Combine PDFs
+        id: combine
+        run: |
+          find . -name "Formula*.pdf" -type f > pdf_list.txt
+          python combine_pdfs.py 
+            
       - name: Upload combined pdf
         uses: actions/upload-artifact@v2
         with:
