@@ -22,6 +22,10 @@ jobs:
         id: combine
         run: python combine_pdfs.py 
 
+      - name: ls
+        id: ls
+        run: ls
+
       - uses: actions/checkout@v3
       - name: Commit PDF
         run: |
