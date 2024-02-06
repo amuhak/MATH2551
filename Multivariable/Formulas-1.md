@@ -75,19 +75,19 @@ Hyperboloid of 1 sheet: $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$
 Hyperboloid of 2 sheets: $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$
 Hyperbolic Paraboloid: $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$
 ## Other Formulas 
-Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$: 
+Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$ whzen $t \in \mathbb{R}$: 
 $$x=at+p_1 \quad y=bt+p_2 \quad z=ct+p_3$$
-$$\langle at+p_1,bt+p_2,ct+p_3 \rangle=\langle a,b,c\rangle t+\langle p_1,p_2,p_3\rangle \text{ }\forall \text{ } t \in \mathbb{R}$$
+$$\langle at+p_1,bt+p_2,ct+p_3 \rangle=\langle a,b,c\rangle t+\langle p_1,p_2,p_3\rangle$$
+Line through $P(p_1,p_2,p_3)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\vec{k}:$
+$$a(x-p_1)+b(y-p_2)+c(z-p_3)=0$$
 Distance between line and point: 
-$$d=\dfrac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$$
+$$d = \dfrac{||\vec{PS} \times v||}{||v||}$$
 Distance from a Point to a Plane,
 $$d=\left| \vec{PS} \cdot \dfrac{n}{||n||} \right|$$
 Projection, 
 $$
 \text{proj}_b a = \left( \dfrac{a \cdot b}{||b||} \right) \dfrac{b}{||b||}
 $$
-Line through $P(p_1,p_2,p_3)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\vec{k}:$
-$$a(x-p_1)+b(y-p_2)+c(z-p_3)=0$$
 Angle between planes: 
 $$\theta=\cos^{-1}{\left(\left|\dfrac{\vec{n_1}\cdot\vec{n_2}}{||\vec{n_1}||\cdot||\vec{n_2}||}\right|\right)}$$
 Distance between Point $S$ and a plane: 
