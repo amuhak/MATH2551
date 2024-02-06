@@ -75,7 +75,7 @@ Hyperboloid of 1 sheet: $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$
 Hyperboloid of 2 sheets: $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$
 Hyperbolic Paraboloid: $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$
 ## Other Formulas 
-Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$ whzen $t \in \mathbb{R}$: 
+Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$ when $t \in \mathbb{R}$: 
 $$x=at+p_1 \quad y=bt+p_2 \quad z=ct+p_3$$
 $$\langle at+p_1,bt+p_2,ct+p_3 \rangle=\langle a,b,c\rangle t+\langle p_1,p_2,p_3\rangle$$
 Line through $P(p_1,p_2,p_3)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\vec{k}:$
