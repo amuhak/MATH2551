@@ -78,7 +78,10 @@ Hyperbolic Paraboloid: $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$
 Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$: 
 $$x=at+p_1 \quad y=bt+p_2 \quad z=ct+p_3$$
 $$\langle at+p_1,bt+p_2,ct+p_3 \rangle=\langle a,b,c\rangle t+\langle p_1,p_2,p_3\rangle \text{ }\forall \text{ } t \in \mathbb{R}$$
-Distance between line and point: $$Q: d=\dfrac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$$
+Distance between line and point: 
+$$d=\dfrac{||\vec{PQ}\times\vec{v}||}{||\vec{v}||}$$
+Distance from a Point to a Plane,
+$$d=\left| \vec{PS} \cdot \dfrac{n}{||n||} \right|$$
 Projection, 
 $$
 \text{proj}_b a = \left( \dfrac{a \cdot b}{||b||} \right) \dfrac{b}{||b||}
