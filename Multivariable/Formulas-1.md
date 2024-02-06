@@ -1,7 +1,7 @@
 Credit Aarush Magic
-$$\vec{a} \cdot \vec{b} = a_1 b_1 + a_2 b_2 + a_3 b_3 + \dots + a_n b_n$$
 $$
 \begin{aligned}
+\vec{a} \cdot \vec{b} &= a_1 b_1 + a_2 b_2 + a_3 b_3 + \dots + a_n b_n \\
 \vec{a} \times \vec{b} &=
 \begin{vmatrix} \vec{i} & \vec{j} & \vec{k} \\
 a_1 & a_2 & a_3\\
@@ -65,15 +65,20 @@ $$
 \end{align*}
 
 $$
-
+## Projectile Motion:
+$\text{Max Height} = \frac{(v_0 \sin(\theta))^2}{2g}$
+$\text{Range} = \frac{v_0^2 \sin(2\theta)}{g}$
+$\text{Flight Time} = \frac{2v_0 \sin(\theta)}{g}$
 ## Graphs
-Cylinder: $ax^n+by^m=c,ax^n+bz^m=c,ay^n+bz^m=c$
-Elliptical Paraboloid: $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}$
-Elliptical Cone: $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z^2}{c^2}$
-Ellipsoid: $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$
-Hyperboloid of 1 sheet: $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$
-Hyperboloid of 2 sheets: $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$
-Hyperbolic Paraboloid: $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$
+| Type | Equaions |
+| ---- | ---- |
+|Cylinder | $ax^n+by^m=c,ax^n+bz^m=c,ay^n+bz^m=c$ |
+|Elliptical Paraboloid | $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}$ |
+|Elliptical Cone | $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z^2}{c^2}$ |
+|Ellipsoid | $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ |
+|Hyperboloid of 1 sheet | $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$ |
+|Hyperboloid of 2 sheets | $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ |
+|Hyperbolic Paraboloid | $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$ |
 ## Other Formulas 
 Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$ when $t \in \mathbb{R}$: 
 $$x=at+p_1 \quad y=bt+p_2 \quad z=ct+p_3$$
@@ -116,7 +121,3 @@ Principal Normal Vector $(N(t))$:
 $$\vec{N}(t)=\frac{\vec{T}'(t)}{||\vec{T}'(t)||}$$
 Binormal vector $(B(t))$:
 $$\vec{B}(t)=\vec{T}(t)\times\vec{N}(t)$$
-## Projectile Motion:
-$\text{Max Height} = \frac{(v_0 \sin(\theta))^2}{2g}$
-$\text{Range} = \frac{v_0^2 \sin(2\theta)}{g}$
-$\text{Flight Time} = \frac{2v_0 \sin(\theta)}{g}$
