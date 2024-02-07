@@ -87,7 +87,7 @@ Line through $P(p_1,p_2,p_3)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\
 $$a(x-p_1)+b(y-p_2)+c(z-p_3)=0$$
 Distance between line and point: 
 $$d = \dfrac{||\vec{PS} \times v||}{||v||}$$
-Distance from a Point to a Plane,
+Distance between Point $S$ and Plane,
 $$d=\left| \vec{PS} \cdot \dfrac{n}{||n||} \right|$$
 Projection, 
 $$
@@ -95,10 +95,6 @@ $$
 $$
 Angle between planes or vectors: 
 $$\theta=\cos^{-1}{\left(\left|\dfrac{\vec{n_1}\cdot\vec{n_2}}{||\vec{n_1}||\cdot||\vec{n_2}||}\right|\right)}$$
-Distance between Point $S$ and a plane: 
-$$d=\left|\vec{PS}\cdot\dfrac{\vec{n}}{||\vec{n}||}\right|$$
-The triangle property of integrals:
-$$\left\|\int_a^b\vec{f}(t)d{t}\right\|\leq\int_a^b\|\vec{f}(t)\|d{t}$$
 Arc Length $(s(t))$:
 $$
 \begin{aligned}L&=\int_a^b\sqrt{\left(\frac{dx}{dt}\right)^2+\left(\frac{dy}{dt}\right)^2+\left(\frac{dz}{dt}\right)^2}dt&=\int_a^b||\vec{r}'(t)||dt \\
