@@ -72,13 +72,12 @@ $\text{Flight Time} = \frac{2v_0 \sin(\theta)}{g}$
 ## Graphs
 | Type | Equaions |
 | ---- | ---- |
-|Cylinder | $ax^n+by^m=c,ax^n+bz^m=c,ay^n+bz^m=c$ |
-|Elliptical Paraboloid | $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}$ |
-|Elliptical Cone | $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z^2}{c^2}$ |
-|Ellipsoid | $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ |
-|Hyperboloid of 1 sheet | $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$ |
-|Hyperboloid of 2 sheets | $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ |
-|Hyperbolic Paraboloid | $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$ |
+| Elliptical Paraboloid | $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}$ |
+| Elliptical Cone | $\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z^2}{c^2}$ |
+| Ellipsoid | $\frac{x^2}{a^2}+\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ |
+| Hyperboloid of 1 sheet | $\frac{x^2}{a^2}+\frac{y^2}{b^2}-\frac{z^2}{c^2}=1$ |
+| Hyperboloid of 2 sheets | $-\frac{x^2}{a^2}-\frac{y^2}{b^2}+\frac{z^2}{c^2}=1$ |
+| Hyperbolic Paraboloid | $-\frac{x^2}{a^2}+\frac{y^2}{b^2}=\frac{z}{c}, c>0$ |
 ## Other Formulas 
 Line through $P(p_1,p_2,p_3)$ and parallel to $\vec{v}=a\vec{i}+b\vec{j}+c\vec{k}$ when $t \in \mathbb{R}$: 
 $$x=at+p_1 \quad y=bt+p_2 \quad z=ct+p_3$$
@@ -87,7 +86,7 @@ Line through $P(p_1,p_2,p_3)$ and perpendicular to $\vec{n}=a\vec{i}+b\vec{j}+c\
 $$a(x-p_1)+b(y-p_2)+c(z-p_3)=0$$
 Distance between line and point: 
 $$d = \dfrac{||\vec{PS} \times v||}{||v||}$$
-Distance between Point $S$ and Plane,
+Distance between Point $S$ and a Plane,
 $$d=\left| \vec{PS} \cdot \dfrac{n}{||n||} \right|$$
 Projection, 
 $$
@@ -106,8 +105,8 @@ $$\vec{T}(t)=\frac{\vec{r}'(t)}{||\vec{r}'(t)||}=\frac{\vec{v}(t)}{||\vec{v}(t)|
 The curvature function $(\kappa(t))$:
 $$
 \begin{align*}
-\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \text{ $T$ is the unit tangent vector, $s$ is the arc length } \\
-&= \frac{||\vec{T}'(t)||}{||\vec{v}(t)||} \quad \text{ note: $\frac{ds}{dt} = ||v||$}\\
+\kappa &= \left\|\frac{d\vec{T}}{ds}\right\| \\
+&= \frac{||\vec{T}'(t)||}{||\vec{v}(t)||} \\
 &= \frac{||\vec{r}'(t)\times\vec{r}''(t)||}{||\vec{r}'(t)||^3} \\
 \end{align*}
 $$
