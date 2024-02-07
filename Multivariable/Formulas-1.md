@@ -93,7 +93,7 @@ Projection,
 $$
 \text{proj}_b a = \left( \dfrac{a \cdot b}{||b||} \right) \dfrac{b}{||b||}
 $$
-Angle between planes: 
+Angle between planes or vectors: 
 $$\theta=\cos^{-1}{\left(\left|\dfrac{\vec{n_1}\cdot\vec{n_2}}{||\vec{n_1}||\cdot||\vec{n_2}||}\right|\right)}$$
 Distance between Point $S$ and a plane: 
 $$d=\left|\vec{PS}\cdot\dfrac{\vec{n}}{||\vec{n}||}\right|$$
