@@ -13,9 +13,13 @@ f_{yx}&=\frac{\partial^2f}{\partial xy}=\frac{\partial}{\partial x}\left(\frac{\
 $$
 Directional Derivative of the unit vector $u = u_1 \mathbf{i} + u_2 \mathbf{j}$
 $$
-f'_u\left(x,y\right)=D_uf\left(x,y\right)=\lim_{s\rightarrow0}\frac{f\left(x+su_1,y+su_2\right)-f\left(x,y\right)}{s}=\mathrm{\nabla f}\left(x,y\right)\cdot u
+\begin{align*}
+f'_u\left(x,y\right)=D_uf\left(x,y\right)&=\lim_{s\rightarrow0}\frac{f\left(x+su_1,y+su_2\right)-f\left(x,y\right)}{s} \\ &=\mathrm{\nabla f}\left(x,y\right)\cdot u
+\end{align*}
 $$
-$${\nabla\ f}\left(x,y,z\right)=\frac{\partial f}{\partial x}i+\frac{\partial f}{\partial y}j+\frac{\partial f}{\partial z}k$$
-
+The Gradient
+$$
+{\nabla\ f}\left(x,y,z\right)=\frac{\partial f}{\partial x}i+\frac{\partial f}{\partial y}j+\frac{\partial f}{\partial z}k
+$$
 Tangent line to a level curve: $f_x\left(x-x_0\right)+f_y\left(y-y_0\right)=0$
 $$\frac{d}{dt}(f(r(t))=\mathrm{\nabla\ f}(r(t))\bullet\ r'(t)$$
