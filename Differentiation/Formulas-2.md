@@ -11,8 +11,9 @@ f_{yx}&=\frac{\partial^2f}{\partial xy}=\frac{\partial}{\partial x}\left(\frac{\
 \frac{dy}{dx}&=-\frac{F_x}{F_y}
 \end{aligned}
 $$
+Directional Derivative of the unit vector $u = u_1 \mathbf{i} + u_2 \mathbf{j}$
 $$
-f'_u\left(x,y\right)=D_uf\left(x,y\right)=\lim_{s\rightarrow0}\frac{f\left(x+su_1,y+su_2\right)-f\left(x,y\right)}{s}=\mathrm{\nabla\ f}\left(x,y\right)\cdot u
+f'_u\left(x,y\right)=D_uf\left(x,y\right)=\lim_{s\rightarrow0}\frac{f\left(x+su_1,y+su_2\right)-f\left(x,y\right)}{s}=\mathrm{\nabla f}\left(x,y\right)\cdot u
 $$
 $${\nabla\ f}\left(x,y,z\right)=\frac{\partial f}{\partial x}i+\frac{\partial f}{\partial y}j+\frac{\partial f}{\partial z}k$$
 
