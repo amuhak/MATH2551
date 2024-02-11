@@ -23,5 +23,17 @@ $$
 $$
 Tangent line to a level curve of the form $f(x,y) = 0$ at a point $(x_0,y_0)$,
 $$f_x(x_0,y_0)\left(x-x_0\right)+f_y(x_0,y_0)\left(y-y_0\right)=0$$
-Derivative Along a Path,
 $$\frac{d}{dt}(f(r(t))=\nabla f(r(t))\cdot r'(t)$$
+Tangent plane to $f\left(x,y,z\right) = c$ at the point $P(x_0,y_0,z_0)$,
+$$f_x(P)\left(x-x_0\right)+f_y(P)\left(y-y_0\right)+f_z(P)\left(z-z_0\right)=0$$
+Or when $f(x,y) =z$ at the point $P(x_0,y_0)$,
+$$f_x(P)\left(x-x_0\right)+f_y(P)\left(y-y_0\right)-\left(z-z_0\right)=0$$
+Normal line to $f\left(x,y,z\right) = c$ at the point $P(x_0,y_0,z_0)$,
+$$
+\begin{aligned}
+x &= x_0+f_x(P)t \\
+y &= y_0+f_y(P)t \\ 
+z &= z_0+f_z(P)t
+\end{aligned}
+$$
+
