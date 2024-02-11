@@ -21,7 +21,7 @@ The Gradient
 $$
 {\nabla\ f}\left(x,y,z\right)=\frac{\partial f}{\partial x}i+\frac{\partial f}{\partial y}j+\frac{\partial f}{\partial z}k
 $$
-Tangent line to a level curve of the form $f(x,y) = 0$,
-$$f_x\left(x-x_0\right)+f_y\left(y-y_0\right)=0$$
-
-$$\frac{d}{dt}(f(r(t))=\mathrm{\nabla\ f}(r(t))\bullet\ r'(t)$$
+Tangent line to a level curve of the form $f(x,y) = 0$ at a point $(x_0,y_0)$,
+$$f_x(x_0,y_0)\left(x-x_0\right)+f_y(x_0,y_0)\left(y-y_0\right)=0$$
+Derivative Along a Path,
+$$\frac{d}{dt}(f(r(t))=\nabla f(r(t))\cdot r'(t)$$
