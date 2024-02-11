@@ -14,12 +14,14 @@ $$
 Directional Derivative of the unit vector $u = u_1 \mathbf{i} + u_2 \mathbf{j}$
 $$
 \begin{align*}
-f'_u\left(x,y\right)=D_uf\left(x,y\right)&=\lim_{s\rightarrow0}\frac{f\left(x+su_1,y+su_2\right)-f\left(x,y\right)}{s} \\ &=\mathrm{\nabla f}\left(x,y\right)\cdot u
+f'_u\left(x,y\right)=D_uf\left(x,y\right)&=\lim_{s\rightarrow0}\frac{f\left(x+su_1,y+su_2\right)-f\left(x,y\right)}{s} \\ &=\mathrm{\nabla f}\left(x,y\right)\cdot u \\ &= ||\nabla f || \cos\theta
 \end{align*}
 $$
 The Gradient
 $$
 {\nabla\ f}\left(x,y,z\right)=\frac{\partial f}{\partial x}i+\frac{\partial f}{\partial y}j+\frac{\partial f}{\partial z}k
 $$
-Tangent line to a level curve: $f_x\left(x-x_0\right)+f_y\left(y-y_0\right)=0$
+Tangent line to a level curve of the form $f(x,y) = 0$,
+$$f_x\left(x-x_0\right)+f_y\left(y-y_0\right)=0$$
+
 $$\frac{d}{dt}(f(r(t))=\mathrm{\nabla\ f}(r(t))\bullet\ r'(t)$$
