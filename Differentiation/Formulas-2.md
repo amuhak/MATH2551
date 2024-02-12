@@ -36,4 +36,12 @@ y &= y_0+f_y(P)t \\
 z &= z_0+f_z(P)t
 \end{aligned}
 $$
-
+Linear Approximation ($f(x,y) \approx L(x,y)$) of $f(x,y)$ at $(x_0,y_0)$,
+$$L(x,y)=f(x_0,y_0)+f_x(x_0,y_0)(x-x_0)+f_y(x_0,y_0)(y-y_0)$$
+Total Differential,
+$$\begin{aligned}
+df&=f_x\left(x_0,y_0\right)dx+f_y\left(x_0,y_0\right)dy \\
+df&= (\nabla)
+\end{aligned}$$
+Standard Linear Approximation Error where $M$ is the upper bound of the second partials on a rectangle centered at point $P$, 
+$$\left|E\right|\le\frac{1}{2}M\left(\left|x-x_0\right|+\left|y-y_0\right|\right)^2$$
