@@ -45,3 +45,11 @@ df&= (\nabla f(P_0) \cdot u) ds
 \end{aligned}$$
 Standard Linear Approximation Error where $M$ is the upper bound of the second partials on a rectangle centered at point $P$, 
 $$\left|E\right|\le\frac{1}{2}M\left(\left|x-x_0\right|+\left|y-y_0\right|\right)^2$$
+Second Partials Test assuming $\Delta f= 0$,
+$$
+\begin{gather*}
+A = f_{xx}(x_0,y_0), \quad B = f_{xy}(x_0,y_0) \quad, C = f_{yy}(x_0,y_0) \\
+D = AC-B^2
+\end{gather*}
+$$
+ 
