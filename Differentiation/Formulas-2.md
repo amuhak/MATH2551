@@ -57,4 +57,4 @@ D &=0 \text{ Indecisive}
 \end{aligned}
 \end{gather*}
 $$
- 
+ For the relative extrema, if $D>0$ and $A>0$ then you have a local min, if $A<0$ you have a local max. 
