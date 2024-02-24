@@ -1,0 +1,902 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 14.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     39658,        894]
+NotebookOptionsPosition[     19785,        464]
+NotebookOutlinePosition[     38463,        878]
+CellTagsIndexPosition[     38420,        875]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"tmb", "[", "r", "]"}], ":=", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", " ", 
+     RowBox[{
+     "rd", ",", " ", "rdd", ",", " ", "rdAbsInt", ",", " ", "tdAbs", ",", " ",
+       "rdAbs", ",", " ", "t", ",", " ", "curvature", ",", " ", "td", ",", 
+      " ", "n", ",", " ", "b"}], " ", "}"}], ",", "\n", "    ", 
+    RowBox[{
+     RowBox[{"Print", "[", 
+      RowBox[{"\"\<Tmb frame for:  \>\"", " ", ",", " ", "r"}], "]"}], ";", 
+     "\n", "    ", 
+     RowBox[{"rd", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{"PowerExpand", "[", 
+        RowBox[{"D", "[", 
+         RowBox[{"r", ",", " ", "x"}], "]"}], "]"}], "]"}]}], ";", "\n", 
+     "    ", 
+     RowBox[{"rdd", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{"PowerExpand", "[", 
+        RowBox[{"D", "[", 
+         RowBox[{"rd", ",", " ", "x"}], "]"}], "]"}], "]"}]}], ";", "\n", 
+     "    ", 
+     RowBox[{"rdAbs", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{"PowerExpand", "[", 
+        RowBox[{
+         RowBox[{"Total", "[", 
+          RowBox[{"rd", " ", "^", " ", "2"}], "]"}], " ", "^", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", " ", "/", " ", "2"}], ")"}]}], "]"}], "]"}]}], ";", 
+     "\n", "    ", 
+     RowBox[{"rdAbsInt", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{"PowerExpand", "[", 
+        RowBox[{"Integrate", "[", 
+         RowBox[{"rdAbs", ",", " ", "x"}], "]"}], "]"}], "]"}]}], ";", "\n", 
+     "    ", 
+     RowBox[{"t", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{
+        RowBox[{"PowerExpand", "[", 
+         RowBox[{"rd", " ", "/", " ", "rdAbs"}], "]"}], ",", " ", 
+        RowBox[{"Assumptions", "->", 
+         RowBox[{"x", ">", "0"}]}]}], "]"}]}], ";", "\n", "    ", 
+     RowBox[{"Print", "[", "\"\<Unit Tangent Vector (T)\>\"", "]"}], ";", 
+     "\n", "    ", 
+     RowBox[{"Print", "[", "t", "]"}], ";", "\n", "    ", 
+     RowBox[{"td", " ", "=", " ", 
+      RowBox[{"D", "[", 
+       RowBox[{"t", ",", " ", "x"}], "]"}]}], ";", "\n", "    ", 
+     RowBox[{"td", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{"PowerExpand", "[", "td", "]"}], "]"}]}], ";", "\n", "    ", 
+     RowBox[{"tdAbs", " ", "=", " ", 
+      RowBox[{
+       RowBox[{"Total", "[", 
+        RowBox[{"td", " ", "^", " ", "2"}], "]"}], " ", "^", " ", 
+       RowBox[{"(", 
+        RowBox[{"1", " ", "/", " ", "2"}], ")"}]}]}], ";", "\n", "    ", 
+     RowBox[{"curvature", " ", "=", " ", 
+      RowBox[{"tdAbs", " ", "/", " ", "rdAbs"}]}], ";", "\n", "    ", 
+     RowBox[{"curvature", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{
+        RowBox[{"PowerExpand", "[", "curvature", "]"}], ",", " ", 
+        RowBox[{"Assumptions", "->", 
+         RowBox[{"x", ">", "0"}]}]}], "]"}]}], ";", "\n", "    ", 
+     RowBox[{"Print", "[", "\"\<Arc Length\>\"", "]"}], ";", "\n", "    ", 
+     RowBox[{"Print", "[", "rdAbsInt", "]"}], ";", "\n", "    ", 
+     RowBox[{"Print", "[", "\"\<Curvature Function\>\"", "]"}], ";", "\n", 
+     "    ", 
+     RowBox[{"Print", "[", "curvature", "]"}], ";", "\n", "    ", 
+     RowBox[{"n", " ", "=", " ", 
+      RowBox[{"td", " ", "/", " ", "tdAbs"}]}], ";", "\n", "    ", 
+     RowBox[{"n", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{
+        RowBox[{"PowerExpand", "[", "n", "]"}], ",", " ", 
+        RowBox[{"Assumptions", "->", 
+         RowBox[{"x", ">", "0"}]}]}], "]"}]}], ";", "\n", "    ", 
+     RowBox[{"Print", "[", "\"\<Principal Normal Vector (N)\>\"", "]"}], ";", 
+     "\n", "    ", 
+     RowBox[{"Print", "[", "n", "]"}], ";", "\n", "    ", 
+     RowBox[{"b", " ", "=", " ", 
+      RowBox[{"Cross", "[", 
+       RowBox[{"t", ",", " ", "n"}], "]"}]}], ";", "\n", "    ", 
+     RowBox[{"b", " ", "=", " ", 
+      RowBox[{"FullSimplify", "[", 
+       RowBox[{
+        RowBox[{"PowerExpand", "[", "b", "]"}], ",", " ", 
+        RowBox[{"Assumptions", "->", 
+         RowBox[{"x", ">", "0"}]}]}], "]"}]}], ";", "\n", "    ", 
+     RowBox[{"Print", "[", "\"\<Binormal Vector (B)\>\"", "]"}], ";", "\n", 
+     "    ", 
+     RowBox[{"Print", "[", "b", "]"}], ";"}]}], "\n", "    ", "]"}]}]], "Code",
+ CellChangeTimes->{{3.9154853609971447`*^9, 3.915485388678507*^9}, {
+   3.915485455829605*^9, 3.915485508743021*^9}, {3.915521435894893*^9, 
+   3.915521439966511*^9}, 3.915521479288782*^9, {3.915527023300197*^9, 
+   3.915527031047915*^9}},
+ CellLabel->"In[1]:=",ExpressionUUID->"f6cc977b-ac68-5347-aecd-366a82067ba4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"x", "=", 
+   RowBox[{"Symbol", "[", "\"\<x\>\"", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"t", "=", "x"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"r", ":=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cos", "[", "x", "]"}], ",", 
+     RowBox[{"Sin", "[", "x", "]"}], ",", "0"}], "}"}]}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Tmb frame for:  \>\"", " ", ",", " ", "r"}], "]"}], 
+  ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Unit Tangent Vector (T):  \>\"", ",", 
+    RowBox[{"FullSimplify", "[", 
+     RowBox[{
+      RowBox[{"ResourceFunction", "[", "\"\<TangentVector\>\"", "]"}], "[", 
+      RowBox[{"r", ",", " ", "x"}], "]"}], "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Principal Normal Vector (N):   \>\"", ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"ResourceFunction", "[", "\"\<NormalVector\>\"", "]"}], "[", 
+       RowBox[{"r", ",", " ", "x"}], "]"}], " ", "//", " ", "PowerExpand"}], 
+     " ", "//", " ", "FullSimplify"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Binormal Vector (B):  \>\"", " ", ",", 
+    RowBox[{
+     RowBox[{
+      RowBox[{
+       RowBox[{"ResourceFunction", "[", "\"\<BinormalVector\>\"", "]"}], "[", 
+       RowBox[{"r", ",", " ", "x"}], "]"}], " ", "//", " ", "PowerExpand"}], 
+     " ", "//", " ", "FullSimplify"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Curvature Function: \>\"", ",", 
+    RowBox[{"FullSimplify", "[", 
+     RowBox[{
+      RowBox[{"ArcCurvature", "[", 
+       RowBox[{"r", ",", "x"}], "]"}], ",", 
+      RowBox[{"Assumptions", "->", 
+       RowBox[{"x", ">", "0"}]}]}], "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Arc Length (By hand):  \>\"", ",", 
+    RowBox[{"FullSimplify", "[", 
+     RowBox[{"PowerExpand", "[", 
+      RowBox[{"Integrate", "[", 
+       RowBox[{
+        RowBox[{"FullSimplify", "[", 
+         RowBox[{"PowerExpand", "[", 
+          RowBox[{
+           RowBox[{"Total", "[", 
+            RowBox[{
+             RowBox[{"FullSimplify", "[", 
+              RowBox[{"PowerExpand", "[", 
+               RowBox[{"D", "[", 
+                RowBox[{"r", ",", " ", "x"}], "]"}], "]"}], "]"}], " ", "^", 
+             " ", "2"}], "]"}], " ", "^", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", " ", "/", " ", "2"}], ")"}]}], "]"}], "]"}], ",", 
+        " ", "x"}], "]"}], "]"}], "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"Print", "[", 
+   RowBox[{"\"\<Arc Length:  \>\"", ",", 
+    RowBox[{"FullSimplify", "[", 
+     RowBox[{
+      RowBox[{"ArcLength", "[", 
+       RowBox[{"r", ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "x"}], "}"}]}], "]"}], ",", 
+      RowBox[{"Assumptions", "->", 
+       RowBox[{"x", ">", "0"}]}]}], "]"}]}], "]"}], ";"}], "\n", 
+ RowBox[{
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"tmb", "[", "r", "]"}], ";"}], "*)"}]}]}], "Code",
+ CellChangeTimes->{{3.91548562624518*^9, 3.9154856472973976`*^9}, {
+   3.915485820729164*^9, 3.915485833153788*^9}, 3.91548672405969*^9, {
+   3.915487077139374*^9, 3.915487094331991*^9}, {3.915487474264837*^9, 
+   3.915487475298742*^9}, {3.915521262861351*^9, 3.915521290408249*^9}, {
+   3.9155213486796055`*^9, 3.915521358540856*^9}, {3.915524568252865*^9, 
+   3.915524589915207*^9}, {3.915524741117258*^9, 3.915524755978857*^9}, {
+   3.915524828855114*^9, 3.915524875860882*^9}, {3.9155250102175865`*^9, 
+   3.915525173980535*^9}, {3.91552526401168*^9, 3.9155253557043552`*^9}, {
+   3.915525511057043*^9, 3.915525518030205*^9}, {3.9155255580475655`*^9, 
+   3.915525578814476*^9}, {3.9155256392852087`*^9, 3.915525705201563*^9}, {
+   3.91552583355291*^9, 3.9155258374610386`*^9}, {3.9155258695223465`*^9, 
+   3.915525900023781*^9}, {3.915525956795376*^9, 3.915525960337265*^9}, {
+   3.915526276802611*^9, 3.915526337684309*^9}, {3.915526744953194*^9, 
+   3.915526814802759*^9}, {3.9155268476974993`*^9, 3.915526848525603*^9}, {
+   3.915526904029598*^9, 3.9155269750732946`*^9}, {3.915527049312712*^9, 
+   3.915527071049829*^9}, {3.9155271440622807`*^9, 3.915527186635832*^9}, {
+   3.915527222246456*^9, 3.9155272223146286`*^9}},
+ CellLabel->"In[12]:=",ExpressionUUID->"f577de95-f026-084a-8fd1-e8a23e574824"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Tmb frame for:  \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"Cos", "[", "x", "]"}], ",", 
+     RowBox[{"Sin", "[", "x", "]"}], ",", "0"}], "}"}]}],
+  SequenceForm["Tmb frame for:  ", {
+    Cos[$CellContext`x], 
+    Sin[$CellContext`x], 0}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.9155251116569824`*^9, 3.9155251763478775`*^9}, {
+   3.9155252661163445`*^9, 3.915525296314995*^9}, {3.915525333161562*^9, 
+   3.9155253565750084`*^9}, {3.915525512664215*^9, 3.9155255187949276`*^9}, {
+   3.9155255664431*^9, 3.9155255803003635`*^9}, {3.9155256536885033`*^9, 
+   3.915525657836218*^9}, 3.9155257060309258`*^9, 3.9155258380953507`*^9, {
+   3.91552589055554*^9, 3.9155259004773445`*^9}, 3.915525960674921*^9, {
+   3.9155262858558464`*^9, 3.915526339692152*^9}, 3.9155267853210487`*^9, 
+   3.9155268497526*^9, {3.9155269070633144`*^9, 3.9155269303603477`*^9}, 
+   3.915526976315895*^9, {3.9155270514912395`*^9, 3.915527072455515*^9}, {
+   3.9155271485035686`*^9, 3.9155271874167576`*^9}, 3.915527222786585*^9, 
+   3.9155357752520638`*^9, 3.915535808430418*^9},
+ FontColor->GrayLevel[1],
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"6205af7a-92f2-b341-96ff-5f047de88f2a"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Unit Tangent Vector (T):  \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Sin", "[", "x", "]"}]}], ",", 
+     RowBox[{"Cos", "[", "x", "]"}], ",", "0"}], "}"}]}],
+  SequenceForm["Unit Tangent Vector (T):  ", {-Sin[$CellContext`x], 
+    Cos[$CellContext`x], 0}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.9155251116569824`*^9, 3.9155251763478775`*^9}, {
+   3.9155252661163445`*^9, 3.915525296314995*^9}, {3.915525333161562*^9, 
+   3.9155253565750084`*^9}, {3.915525512664215*^9, 3.9155255187949276`*^9}, {
+   3.9155255664431*^9, 3.9155255803003635`*^9}, {3.9155256536885033`*^9, 
+   3.915525657836218*^9}, 3.9155257060309258`*^9, 3.9155258380953507`*^9, {
+   3.91552589055554*^9, 3.9155259004773445`*^9}, 3.915525960674921*^9, {
+   3.9155262858558464`*^9, 3.915526339692152*^9}, 3.9155267853210487`*^9, 
+   3.9155268497526*^9, {3.9155269070633144`*^9, 3.9155269303603477`*^9}, 
+   3.915526976315895*^9, {3.9155270514912395`*^9, 3.915527072455515*^9}, {
+   3.9155271485035686`*^9, 3.9155271874167576`*^9}, 3.915527222786585*^9, 
+   3.9155357752520638`*^9, 3.91553580843841*^9},
+ FontColor->GrayLevel[1],
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"08803749-44ef-584c-8197-3c94ee339bae"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Principal Normal Vector (N):   \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", 
+      RowBox[{"Cos", "[", "x", "]"}]}], ",", 
+     RowBox[{"-", 
+      RowBox[{"Sin", "[", "x", "]"}]}], ",", "0"}], "}"}]}],
+  SequenceForm[
+  "Principal Normal Vector (N):   ", {-Cos[$CellContext`x], -
+    Sin[$CellContext`x], 0}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.9155251116569824`*^9, 3.9155251763478775`*^9}, {
+   3.9155252661163445`*^9, 3.915525296314995*^9}, {3.915525333161562*^9, 
+   3.9155253565750084`*^9}, {3.915525512664215*^9, 3.9155255187949276`*^9}, {
+   3.9155255664431*^9, 3.9155255803003635`*^9}, {3.9155256536885033`*^9, 
+   3.915525657836218*^9}, 3.9155257060309258`*^9, 3.9155258380953507`*^9, {
+   3.91552589055554*^9, 3.9155259004773445`*^9}, 3.915525960674921*^9, {
+   3.9155262858558464`*^9, 3.915526339692152*^9}, 3.9155267853210487`*^9, 
+   3.9155268497526*^9, {3.9155269070633144`*^9, 3.9155269303603477`*^9}, 
+   3.915526976315895*^9, {3.9155270514912395`*^9, 3.915527072455515*^9}, {
+   3.9155271485035686`*^9, 3.9155271874167576`*^9}, 3.915527222786585*^9, 
+   3.9155357752520638`*^9, 3.915535808446409*^9},
+ FontColor->GrayLevel[1],
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"4a7e27ba-169a-a34f-9e47-48b86a40c66e"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Binormal Vector (B):  \"\>", "\[InvisibleSpace]", 
+   RowBox[{"{", 
+    RowBox[{"0", ",", "0", ",", "1"}], "}"}]}],
+  SequenceForm["Binormal Vector (B):  ", {0, 0, 1}],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.9155251116569824`*^9, 3.9155251763478775`*^9}, {
+   3.9155252661163445`*^9, 3.915525296314995*^9}, {3.915525333161562*^9, 
+   3.9155253565750084`*^9}, {3.915525512664215*^9, 3.9155255187949276`*^9}, {
+   3.9155255664431*^9, 3.9155255803003635`*^9}, {3.9155256536885033`*^9, 
+   3.915525657836218*^9}, 3.9155257060309258`*^9, 3.9155258380953507`*^9, {
+   3.91552589055554*^9, 3.9155259004773445`*^9}, 3.915525960674921*^9, {
+   3.9155262858558464`*^9, 3.915526339692152*^9}, 3.9155267853210487`*^9, 
+   3.9155268497526*^9, {3.9155269070633144`*^9, 3.9155269303603477`*^9}, 
+   3.915526976315895*^9, {3.9155270514912395`*^9, 3.915527072455515*^9}, {
+   3.9155271485035686`*^9, 3.9155271874167576`*^9}, 3.915527222786585*^9, 
+   3.9155357752520638`*^9, 3.915535808446409*^9},
+ FontColor->GrayLevel[1],
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"1238b3fa-d32b-8249-a798-ae82d023b80c"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Curvature Function: \"\>", "\[InvisibleSpace]", "1"}],
+  SequenceForm["Curvature Function: ", 1],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.9155251116569824`*^9, 3.9155251763478775`*^9}, {
+   3.9155252661163445`*^9, 3.915525296314995*^9}, {3.915525333161562*^9, 
+   3.9155253565750084`*^9}, {3.915525512664215*^9, 3.9155255187949276`*^9}, {
+   3.9155255664431*^9, 3.9155255803003635`*^9}, {3.9155256536885033`*^9, 
+   3.915525657836218*^9}, 3.9155257060309258`*^9, 3.9155258380953507`*^9, {
+   3.91552589055554*^9, 3.9155259004773445`*^9}, 3.915525960674921*^9, {
+   3.9155262858558464`*^9, 3.915526339692152*^9}, 3.9155267853210487`*^9, 
+   3.9155268497526*^9, {3.9155269070633144`*^9, 3.9155269303603477`*^9}, 
+   3.915526976315895*^9, {3.9155270514912395`*^9, 3.915527072455515*^9}, {
+   3.9155271485035686`*^9, 3.9155271874167576`*^9}, 3.915527222786585*^9, 
+   3.9155357752520638`*^9, 3.915535808446409*^9},
+ FontColor->GrayLevel[1],
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"b142cd21-b44b-5242-b19e-f71a28cae014"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Arc Length (By hand):  \"\>", "\[InvisibleSpace]", "x"}],
+  SequenceForm["Arc Length (By hand):  ", $CellContext`x],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.9155251116569824`*^9, 3.9155251763478775`*^9}, {
+   3.9155252661163445`*^9, 3.915525296314995*^9}, {3.915525333161562*^9, 
+   3.9155253565750084`*^9}, {3.915525512664215*^9, 3.9155255187949276`*^9}, {
+   3.9155255664431*^9, 3.9155255803003635`*^9}, {3.9155256536885033`*^9, 
+   3.915525657836218*^9}, 3.9155257060309258`*^9, 3.9155258380953507`*^9, {
+   3.91552589055554*^9, 3.9155259004773445`*^9}, 3.915525960674921*^9, {
+   3.9155262858558464`*^9, 3.915526339692152*^9}, 3.9155267853210487`*^9, 
+   3.9155268497526*^9, {3.9155269070633144`*^9, 3.9155269303603477`*^9}, 
+   3.915526976315895*^9, {3.9155270514912395`*^9, 3.915527072455515*^9}, {
+   3.9155271485035686`*^9, 3.9155271874167576`*^9}, 3.915527222786585*^9, 
+   3.9155357752520638`*^9, 3.9155358084544106`*^9},
+ FontColor->GrayLevel[1],
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"4f71b68e-b209-564d-8d25-a97869906248"],
+
+Cell[BoxData[
+ InterpretationBox[
+  RowBox[{"\<\"Arc Length:  \"\>", "\[InvisibleSpace]", "x"}],
+  SequenceForm["Arc Length:  ", $CellContext`x],
+  Editable->False]], "Print",
+ CellChangeTimes->{{3.9155251116569824`*^9, 3.9155251763478775`*^9}, {
+   3.9155252661163445`*^9, 3.915525296314995*^9}, {3.915525333161562*^9, 
+   3.9155253565750084`*^9}, {3.915525512664215*^9, 3.9155255187949276`*^9}, {
+   3.9155255664431*^9, 3.9155255803003635`*^9}, {3.9155256536885033`*^9, 
+   3.915525657836218*^9}, 3.9155257060309258`*^9, 3.9155258380953507`*^9, {
+   3.91552589055554*^9, 3.9155259004773445`*^9}, 3.915525960674921*^9, {
+   3.9155262858558464`*^9, 3.915526339692152*^9}, 3.9155267853210487`*^9, 
+   3.9155268497526*^9, {3.9155269070633144`*^9, 3.9155269303603477`*^9}, 
+   3.915526976315895*^9, {3.9155270514912395`*^9, 3.915527072455515*^9}, {
+   3.9155271485035686`*^9, 3.9155271874167576`*^9}, 3.915527222786585*^9, 
+   3.9155357752520638`*^9, 3.91553580860882*^9},
+ FontColor->GrayLevel[1],
+ CellLabel->
+  "During evaluation of \
+In[12]:=",ExpressionUUID->"ec3f0a65-931c-8b40-a6b0-084a2953975a"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[""], "Code",
+ CellChangeTimes->{{3.915526131274193*^9, 3.915526131276169*^9}, {
+   3.9155262091298656`*^9, 3.9155262736010036`*^9}, {3.915526393881607*^9, 
+   3.9155263981069546`*^9}, {3.9155265979654217`*^9, 
+   3.9155266064697056`*^9}, {3.9155267184216404`*^9, 3.915526740010479*^9}, {
+   3.915527088884655*^9, 3.915527090360384*^9}, 
+   3.915527137625786*^9},ExpressionUUID->"4e5d4c01-9036-6247-a1e1-\
+45643a714c8d"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   FractionBox[
+    RowBox[{"5", " ", 
+     RowBox[{"Cot", "[", 
+      RowBox[{"5", " ", "x"}], "]"}], " ", 
+     SqrtBox[
+      SuperscriptBox[
+       RowBox[{"Sin", "[", 
+        RowBox[{"5", " ", "x"}], "]"}], "2"]]}], 
+    SqrtBox[
+     RowBox[{"9", "+", 
+      RowBox[{"25", " ", 
+       SuperscriptBox[
+        RowBox[{"Cos", "[", 
+         RowBox[{"5", " ", "x"}], "]"}], "2"]}]}]]], ",", 
+   RowBox[{"-", 
+    FractionBox[
+     RowBox[{"3", " ", 
+      RowBox[{"Csc", "[", 
+       RowBox[{"5", " ", "x"}], "]"}], " ", 
+      SqrtBox[
+       SuperscriptBox[
+        RowBox[{"Sin", "[", 
+         RowBox[{"5", " ", "x"}], "]"}], "2"]]}], 
+     SqrtBox[
+      RowBox[{"9", "+", 
+       RowBox[{"25", " ", 
+        SuperscriptBox[
+         RowBox[{"Cos", "[", 
+          RowBox[{"5", " ", "x"}], "]"}], "2"]}]}]]]}], ",", "0"}], 
+  "}"}]], "Print",
+ CellChangeTimes->{3.9155267310395947`*^9},
+ CellLabel->
+  "During evaluation of \
+In[256]:=",ExpressionUUID->"484540b2-729c-8d44-a71d-dbd0651ed56d"]
+}, Open  ]],
+
+Cell[BoxData["|"], "Code",
+ CellChangeTimes->{
+  3.915526218999077*^9},ExpressionUUID->"7546b6ab-4944-8a49-9b3a-\
+b9152bc0bb79"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.9155262059611225`*^9, 
+  3.91552620596628*^9}},ExpressionUUID->"d8542afc-7fc4-c744-a717-\
+82ce495322ff"]
+},
+WindowSize->{1141.2, 604.8},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+Magnification:>1. Inherited,
+FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
+StyleDefinitions->Notebook[{
+   Cell[
+    CellGroupData[{
+      Cell["DarkStyle for Notebooks", "Title"], 
+      Cell[
+       StyleData[StyleDefinitions -> "Default.nb"]], 
+      Cell[
+       CellGroupData[{
+         Cell["Styles for Tongue menu cells", "Section"], 
+         Cell[
+          StyleData[
+          "WolframAlphaShort", StyleDefinitions -> StyleData["Input"]], 
+          StyleKeyMapping -> {
+           "=" -> "WolframAlphaLong", "Backspace" -> "Input"}, EvaluationMode -> 
+          "WolframAlphaShort", 
+          CellEventActions -> {"ReturnKeyDown" :> FrontEndTokenExecute[
+              EvaluationNotebook[], "HandleShiftReturn"]}, 
+          CellFrameLabels -> {{
+             Cell[
+              BoxData[
+               StyleBox[
+               "\[FreeformPrompt]", FontColor -> RGBColor[0, 0.7, 1]]]], 
+             None}, {None, None}}, DefaultFormatType -> TextForm, 
+          ShowCodeAssist -> False, FormatType -> TextForm, FontFamily -> 
+          "Helvetica"], 
+         Cell[
+          StyleData[
+          "WolframAlphaShortInput", StyleDefinitions -> StyleData["Input"]], 
+          EvaluationMode -> "WolframAlphaShort", 
+          CellEventActions -> {"ReturnKeyDown" :> FrontEndTokenExecute[
+              EvaluationNotebook[], "HandleShiftReturn"]}, 
+          CellFrameLabels -> {{
+             Cell[
+              BoxData[
+               StyleBox[
+               "\[FreeformPrompt]", FontColor -> RGBColor[0, 0.7, 1]]], 
+              CellBaseline -> Baseline], None}, {None, None}}, ShowCodeAssist -> 
+          False, FormatType -> TextForm, FontFamily -> "Helvetica"], 
+         Cell[
+          StyleData[
+          "WolframAlphaLong", StyleDefinitions -> StyleData["Input"]], 
+          StyleKeyMapping -> {
+           "=" -> "Input", "Backspace" -> "WolframAlphaShort"}, 
+          EvaluationMode -> "WolframAlphaLong", 
+          CellEventActions -> {"ReturnKeyDown" :> FrontEndTokenExecute[
+              EvaluationNotebook[], "HandleShiftReturn"]}, 
+          CellFrameLabels -> {{
+             Cell[
+              BoxData[
+               StyleBox[
+               "\[WolframAlphaPrompt]", FontColor -> RGBColor[0, 0.7, 1]]]], 
+             None}, {None, None}}, DefaultFormatType -> TextForm, 
+          ShowCodeAssist -> False, FormatType -> TextForm, FontFamily -> 
+          "Helvetica"], 
+         Cell[
+          StyleData["WolframAlphaFullOutput"], 
+          CellMargins -> {{20, 10}, {Inherited, Inherited}}], 
+         Cell[
+          CellGroupData[{
+            Cell[
+             StyleData["ExternalLanguage"], CellFrame -> 1, 
+             CellMargins -> {{66, 10}, {8, 8}}, 
+             StyleKeyMapping -> {"Backspace" -> "Input"}, Evaluatable -> True,
+              EvaluationMode -> "ExternalLanguage", CellGroupingRules -> 
+             "InputGrouping", StripStyleOnPaste -> True, 
+             CellEvaluationLanguage -> "Python", 
+             CellFrameMargins -> {{4, 8}, {8, 8}}, CellFrameColor -> 
+             RGBColor[0.2549, 0.23137, 0.42549], CellFrameLabels -> {{
+                Cell[
+                 BoxData[
+                  DynamicBox[
+                   ToBoxes[
+                   ExternalEvaluate`FE`$ExternalLanguageMenuDataChanged; 
+                    FrontEnd`Private`MakeExternalLanguageMenu[
+                    ExternalEvaluate`FE`GetDefaultCellEvaluationLanguage[], 
+                    ExternalEvaluate`FE`GetExternalLanguageMenuData[]], 
+                    StandardForm], 
+                   TrackedSymbols :> {
+                    ExternalEvaluate`FE`$ExternalLanguageMenuDataChanged}, 
+                   ImageSizeCache -> {
+                    35., {10.64208984375, 17.35791015625}}]], "Output", 
+                 Background -> None, CellFrame -> 0], None}, {None, None}}, 
+             CellFrameLabelMargins -> 0, AllowInlineCells -> False, 
+             Hyphenation -> False, AutoQuoteCharacters -> {}, 
+             PasteAutoQuoteCharacters -> {}, LanguageCategory -> "Formula", 
+             ScriptLevel -> 1, MenuSortingValue -> 1800, FontFamily -> Dynamic[
+               CurrentValue[{StyleHints, "CodeFont"}]], FontSize -> 12, 
+             FontColor -> GrayLevel[0.97], Background -> 
+             RGBColor[0.18, 0.172, 0.22]], 
+            Cell[
+             StyleData["ExternalLanguage", "Presentation"], 
+             CellMargins -> {{101, 10}, {8, 15}}, FontSize -> 18], 
+            Cell[
+             StyleData["ExternalLanguage", "SlideShow"], ShowGroupOpener -> 
+             False, CellMargins -> {{110, 10}, {8, 15}}, FontSize -> 18], 
+            Cell[
+             StyleData["ExternalLanguage", "Printout"], 
+             CellMargins -> {{48, 10}, {8, 8}}, 
+             CellFrameMargins -> {{2, 8}, {8, 8}}]}, Open]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell["Notebook options settings", "Section"], 
+         Cell[
+          StyleData[All, "Working"], InitializationCellEvaluation -> False, 
+          DockedCells -> None, DefaultNewCellStyle -> "Code", 
+          ShowPredictiveInterface -> False], 
+         Cell[
+          StyleData["Notebook"], 
+          CellBracketOptions -> {
+           "Color" -> RGBColor[0., 0.8, 1], "HoverColor" -> 
+            RGBColor[0.78, 0.64, 1], "Thickness" -> 1.3, "Widths" -> {2, 8}}, 
+          StyleKeyMapping -> {
+           "==" -> "WolframAlphaLong", "Backspace" -> "WolframAlphaShort", 
+            "=" -> "WolframAlphaShort", "*" -> "Item", ">" -> 
+            "ExternalLanguage", "Backspace" -> "Code"}, 
+          AutoStyleOptions -> {
+           "CommentStyle" -> {
+             FontColor -> RGBColor[0.89, 0.56, 1., 0.95], ShowAutoStyles -> 
+              False, ShowSyntaxStyles -> False, AutoNumberFormatting -> 
+              False}, "ExcessArgumentStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+             "FunctionLocalVariableStyle" -> {
+             FontColor -> RGBColor[0.52549, 0.843137, 1.]}, 
+            "GraphicsCompatibilityProblemStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+             "LocalScopeConflictStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.8274509803921568, 0.21176470588235294`, 0.5098039215686274]},
+             "LocalVariableStyle" -> {
+             FontColor -> RGBColor[0., 0.8200000000000001, 0.32]}, 
+            "MissingArgumentStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+             "MisspelledWordStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.8274509803921568, 0.21176470588235294`, 0.5098039215686274]},
+             "NoKernelPresentStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.16470588235294117`, 0.6313725490196078, 0.596078431372549]}, 
+            "PatternVariableStyle" -> {
+             FontColor -> RGBColor[0.11, 1., 0.08], FontSlant -> "Italic"}, 
+            "StringStyle" -> {
+             FontColor -> RGBColor[0.98, 0.71, 0.], ShowAutoStyles -> False, 
+              ShowSyntaxStyles -> False, AutoNumberFormatting -> False}, 
+            "UndefinedSymbolStyle" -> {FontColor -> RGBColor[0.42, 0.94, 1]}, 
+            "UnknownOptionStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.8627450980392157, 0.19607843137254902`, 0.1843137254901961]},
+             "UnwantedAssignmentStyle" -> {
+             FontColor -> 
+              RGBColor[
+               0.8627450980392157, 0.19607843137254902`, 
+                0.1843137254901961]}}, 
+          CodeAssistOptions -> {
+           "AutoConvertEnable" -> False, 
+            "HeadHighlightStyle" -> {
+             Background -> None, FontColor -> RGBColor[1, 1, 0], FontWeight -> 
+              Bold}, "MatchHighlightStyle" -> {
+             Background -> None, FontColor -> RGBColor[1, 1, 0], FontWeight -> 
+              Bold}}, TranslationOptions -> {"Language" -> None}, FontColor -> 
+          RGBColor[0, 0.7, 1], Background -> GrayLevel[0.15]], 
+         Cell[
+          StyleData["DialogStyle"], FontColor -> RGBColor[0, 0.7, 1]], 
+         Cell[
+          StyleData["NotebookObject"], FontColor -> RGBColor[0, 0.7, 1]], 
+         Cell[
+          StyleData["LinguisticAssistant"], FontColor -> 
+          RGBColor[0, 0.7, 1]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell["Styles for Title and Section Cells", "Section"], 
+         Cell[
+          StyleData["Title"], FontColor -> GrayLevel[1]], 
+         Cell[
+          StyleData["Chapter"], FontColor -> RGBColor[0.8, 0.8, 0.8]], 
+         Cell[
+          StyleData["Subchapter"], FontColor -> RGBColor[0.65, 0.05, 0.65]], 
+         Cell[
+          StyleData["Subtitle"], FontColor -> 
+          RGBColor[0.196078, 0.694118, 0.862745]], 
+         Cell[
+          StyleData["Subsubtitle"], FontColor -> 
+          RGBColor[0.196078, 0.394118, 0.562745]], 
+         Cell[
+          StyleData["Subsubtitle"]], 
+         Cell[
+          StyleData["Section"], FontColor -> 
+          RGBColor[
+           0.1399099717708095, 0.5224231326771954, 0.6501869230182346]], 
+         Cell[
+          StyleData["Subsection"], FontColor -> GrayLevel[0.749996]], 
+         Cell[
+          StyleData["Subsubsection"], FontColor -> 
+          RGBColor[0.823529, 0.490654, 0.202274]], 
+         Cell[
+          StyleData["Subsubsubsection"], FontColor -> 
+          RGBColor[0.954147, 0.694224, 0.124651]], 
+         Cell[
+          StyleData["Subsubsubsubsection"], FontColor -> 
+          RGBColor[0.913237, 0.365469, 0.0854353]], 
+         Cell[
+          StyleData["Text"], FontFamily -> "Gill Sans Light", FontSize -> 14, 
+          FontWeight -> "Plain", FontSlant -> "Plain", FontColor -> 
+          GrayLevel[0.683803]], 
+         Cell[
+          StyleData["Item"], CellDingbat -> 
+          StyleBox["\[FilledSmallSquare]", Alignment -> Baseline, 
+            RGBColor[0, 0.7, 1]], CellMargins -> {{81, 10}, {4, 8}}, 
+          ReturnCreatesNewCell -> True, 
+          StyleKeyMapping -> {"Tab" -> "Subitem", "*" -> "Subitem"}, 
+          CellGroupingRules -> {"GroupTogetherNestedGrouping", 15000}, 
+          CellFrameLabelMargins -> 4, CounterIncrements -> "Item", 
+          CounterAssignments -> {{"Subitem", 0}, {"Subsubitem", 0}}, 
+          MenuSortingValue -> 1600, FontFamily -> "Source Sans Pro", FontSize -> 
+          15], 
+         Cell[
+          StyleData["ItemParagraph"], FontColor -> GrayLevel[0.6]], 
+         Cell[
+          StyleData["SubitemParagraph"], FontColor -> GrayLevel[0.6]], 
+         Cell[
+          StyleData["SubsubitemParagraph"], FontColor -> GrayLevel[0.6]], 
+         Cell[
+          CellGroupData[{
+            Cell["Chapter", "Subsection"], 
+            Cell[
+             StyleData["Chapter"], CounterIncrements -> "Chapter", 
+             CounterAssignments -> {{"Subchapter", 0}, {"Section", 0}, {
+               "Equation", 0}, {"Figure", 0}, {"Subsubtitle", 0}, {
+               "Item", 0}, {"Subitem", 0}, {"Subsubitem", 0}, {
+               "ItemNumbered", 0}, {"SubitemNumbered", 0}, {
+               "SubsubitemNumbered", 0}}, MenuSortingValue -> 1150, 
+             MenuCommandKey :> "2"], 
+            Cell[
+             StyleData["Subchapter"], CellDingbat -> 
+             StyleBox["\[MathematicaIcon]", Alignment -> Baseline, 
+               RGBColor[0., 0.043, 0.9]], CounterIncrements -> "Subchapter", 
+             CounterAssignments -> {{"Section", 0}, {"Equation", 0}, {
+               "Figure", 0}, {"Item", 0}, {"Subitem", 0}, {"Subsubitem", 0}, {
+               "ItemNumbered", 0}, {"SubitemNumbered", 0}, {
+               "SubsubitemNumbered", 0}}, MenuSortingValue -> 1200, 
+             MenuCommandKey :> "3"]}, Open]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell["Input and Output cells", "Section"], 
+         Cell[
+          StyleData["Code"], 
+          CellMargins -> {{66, Inherited}, {Inherited, Inherited}}, 
+          CellFrameLabelMargins -> {{17, Inherited}, {Inherited, Inherited}}, 
+          FontSize -> 13, FontWeight -> Plain, FontColor -> GrayLevel[1], 
+          Background -> GrayLevel[0.1]], 
+         Cell[
+          StyleData["InitializationCell"], 
+          CellMargins -> {{55, Inherited}, {Inherited, Inherited}}, 
+          CellFrameMargins -> {{10, 10}, {5, 5}}, CellFrameLabelMargins -> -5,
+           FontColor -> GrayLevel[1], Background -> GrayLevel[0.25]], 
+         Cell[
+          StyleData["Input"], 
+          CellMargins -> {{66, Inherited}, {Inherited, Inherited}}, 
+          CellFrameLabelMargins -> {{17, Inherited}, {Inherited, Inherited}}, 
+          FontSize -> 13, FontColor -> GrayLevel[0.7]], 
+         Cell[
+          StyleData["Output"], CellFrame -> True, 
+          CellMargins -> {{55, Inherited}, {Inherited, Inherited}}, 
+          CellLabelStyle -> {"CellLabel", FontColor -> GrayLevel[0.78]}, 
+          CellFrameMargins -> {{10, 0}, {0, 0}}, CellFrameStyle -> {
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             RGBColor[0.45, 0.45, 0.95], 
+             Thickness[1], 
+             Dashing[{4, 6}]]}, CellFrameLabelMargins -> -5, FontSize -> 13], 
+         Cell[
+          StyleData["Message"], CellFrame -> True, 
+          CellMargins -> {{55, Inherited}, {Inherited, Inherited}}, 
+          CellLabelStyle -> {"CellLabel", FontColor -> GrayLevel[0.78]}, 
+          CellFrameMargins -> {{10, 0}, {0, 0}}, CellFrameStyle -> {
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             RGBColor[0.45, 0.45, 0.95], 
+             Thickness[1], 
+             Dashing[{4, 6}]]}, CellFrameLabelMargins -> -5, FontColor -> 
+          RGBColor[
+           0.704600595101854, 0.24277103837644007`, 0.22278171969176777`]], 
+         Cell[
+          StyleData["Print"], CellFrame -> True, 
+          CellMargins -> {{55, Inherited}, {Inherited, Inherited}}, 
+          CellLabelStyle -> {"CellLabel", FontColor -> GrayLevel[0.78]}, 
+          CellFrameMargins -> {{10, 0}, {0, 0}}, CellFrameStyle -> {
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             GrayLevel[1, 0]], 
+            Directive[
+             RGBColor[0.45, 0.45, 0.95], 
+             Thickness[1], 
+             Dashing[{4, 6}]]}, CellFrameLabelMargins -> -5, FontColor -> 
+          GrayLevel[0.3]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell["misc", "Section"], 
+         Cell[
+          StyleData["InformationCell"], 
+          CellBracketOptions -> {
+           "Color" -> RGBColor[0.760174, 0.600641, 0.675288]}, FontColor -> 
+          GrayLevel[0.3]], 
+         Cell[
+          StyleData["InformationLink"], FontColor -> 
+          RGBColor[0.4525, 0.48138, 0.7]], 
+         Cell[
+          StyleData["InformationLinkLF"], FontColor -> 
+          RGBColor[0.4525, 0.48138, 0.7]], 
+         Cell[
+          StyleData["CellLabel"], 
+          CellLabelMargins -> {{12, Inherited}, {Inherited, Inherited}}, 
+          LanguageCategory -> None, StyleMenuListing -> None, FontFamily -> 
+          "Helvetica", FontSize -> 9]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell["Styles for Formulas and Programming", "Section"], 
+         Cell[
+          StyleData["DisplayFormula"], FontColor -> GrayLevel[0.85]], 
+         Cell[
+          StyleData["DisplayFormulaNumbered"], FontColor -> GrayLevel[0.85]], 
+         Cell[
+          StyleData["Program"], CellFrameColor -> GrayLevel[0.4]]}, Open]], 
+      Cell[
+       CellGroupData[{
+         Cell[
+          TextData[{"Styles for ", 
+            StyleBox["Mathematica", FontSlant -> "Italic"], 
+            " System\[Hyphen]specific Elements"}], "Section", 
+          CellChangeTimes -> {{3.601920784160323*^9, 3.60192078489342*^9}, 
+            3.60356525124664*^9, {3.603711768164369*^9, 
+            3.60371176831959*^9}}], 
+         Cell[
+          CellGroupData[{
+            Cell["FormatType Styles", "Subsection"], 
+            Cell[
+             StyleData["StandardForm"]], 
+            Cell[
+             StyleData["CellExpression"], FontColor -> GrayLevel[0], 
+             Background -> GrayLevel[0.75]], 
+            Cell[
+             StyleData["CellLabel"], FontSize -> 9, FontColor -> 
+             RGBColor[0.603861, 0.615915, 0.607843]]}, Open]], 
+         Cell[
+          CellGroupData[{
+            Cell[
+            "Graphics Styles", "Subsection", 
+             CellChangeTimes -> {{3.603565272271762*^9, 
+              3.603565284491351*^9}}], 
+            Cell[
+             StyleData["GraphicsAxes"], LineColor -> 
+             RGBColor[
+              0.5764705882352941, 0.6313725490196078, 0.6313725490196078], 
+             FontFamily -> "Avenir", FontSize -> 9, FontWeight -> "Plain", 
+             FontSlant -> "Plain", FontColor -> 
+             RGBColor[
+              0.5764705882352941, 0.6313725490196078, 0.6313725490196078]], 
+            Cell[
+             StyleData["GraphicsFrame"], LineColor -> 
+             RGBColor[
+              0.5764705882352941, 0.6313725490196078, 0.6313725490196078], 
+             FontFamily -> "Avenir", FontSize -> 9, FontWeight -> "Plain", 
+             FontSlant -> "Plain", FontColor -> 
+             RGBColor[
+              0.5764705882352941, 0.6313725490196078, 0.6313725490196078]], 
+            Cell[
+             StyleData["Graphics3DAxes"], LineColor -> 
+             RGBColor[
+              0.5764705882352941, 0.6313725490196078, 0.6313725490196078], 
+             FontFamily -> "Arial", FontSize -> 9, FontWeight -> "Plain", 
+             FontSlant -> "Plain", FontColor -> 
+             RGBColor[
+              0.5764705882352941, 0.6313725490196078, 0.6313725490196078]]}, 
+           Open]]}, Open]]}, Open]]}, Visible -> False, FrontEndVersion -> 
+  "14.0 for Microsoft Windows (64-bit) (December 12, 2023)", StyleDefinitions -> 
+  "Default.nb"],
+ExpressionUUID->"598eebfb-9327-624d-948c-a17cfc69b2b9"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 4554, 103, 528, "Code",ExpressionUUID->"f6cc977b-ac68-5347-aecd-366a82067ba4"],
+Cell[CellGroupData[{
+Cell[5137, 127, 4348, 102, 224, "Code",ExpressionUUID->"f577de95-f026-084a-8fd1-e8a23e574824"],
+Cell[CellGroupData[{
+Cell[9510, 233, 1273, 25, 22, "Print",ExpressionUUID->"6205af7a-92f2-b341-96ff-5f047de88f2a"],
+Cell[10786, 260, 1310, 25, 22, "Print",ExpressionUUID->"08803749-44ef-584c-8197-3c94ee339bae"],
+Cell[12099, 287, 1347, 27, 22, "Print",ExpressionUUID->"4a7e27ba-169a-a34f-9e47-48b86a40c66e"],
+Cell[13449, 316, 1173, 21, 22, "Print",ExpressionUUID->"1238b3fa-d32b-8249-a798-ae82d023b80c"],
+Cell[14625, 339, 1102, 19, 22, "Print",ExpressionUUID->"b142cd21-b44b-5242-b19e-f71a28cae014"],
+Cell[15730, 360, 1123, 19, 22, "Print",ExpressionUUID->"4f71b68e-b209-564d-8d25-a97869906248"],
+Cell[16856, 381, 1100, 19, 22, "Print",ExpressionUUID->"ec3f0a65-931c-8b40-a6b0-084a2953975a"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[18005, 406, 432, 7, 33, "Code",ExpressionUUID->"4e5d4c01-9036-6247-a1e1-45643a714c8d"],
+Cell[18440, 415, 1042, 36, 49, "Print",ExpressionUUID->"484540b2-729c-8d44-a71d-dbd0651ed56d"]
+}, Open  ]],
+Cell[19497, 454, 128, 3, 33, "Code",ExpressionUUID->"7546b6ab-4944-8a49-9b3a-b9152bc0bb79"],
+Cell[19628, 459, 153, 3, 23, "Input",ExpressionUUID->"d8542afc-7fc4-c744-a717-82ce495322ff"]
+}
+]
+*)
+
