@@ -4,11 +4,17 @@ if $R$ is defined by $a\leq x \leq b$ and $g_1(x) \leq y \leq g_2(x)$ then,
 $$V=\int_a^b{\int_{g_1(x)}^{g_2(x)}{f(x,y)}}dydx$$
 Notice: The functions $g_n(x)$ are evaluated first.
 # Properties
-$$\iint_R{cf(x,y)}dA=c\iint_R{f(x,y)}dA$$
-$$\iint_R{f(x,y) \pm g(x,y)}dA=\iint_R{f(x,y)}dA \pm \iint_R{g(x,y)}dA$$
-$$\iint_R{f(x,y)}dA \geq 0 \text{ if } f(x,y) \geq 0 \text{ on } R$$
-$$\iint_R{f(x,y)}dA \geq \iint_R{g(x,y)}dA \text{ if } f(x,y) \geq g(x,y) \text{ on } R$$
-$$\iint_R{f(x,y)}dA=\iint_{R_1}{f(x,y)}dA+\iint_{R_2}{f(x,y)}dA \text{ if }R_1 \text{ and } R_2\text{ are non-overlapping regions}$$
+$$
+\begin{align*}
+\iint_R{cf(x,y)}dA&=c\iint_R{f(x,y)}dA \\
+\iint_R{f(x,y) \pm g(x,y)}dA&=\iint_R{f(x,y)}dA \pm \iint_R{g(x,y)}dA \\
+\iint_R{f(x,y)}dA &\geq 0 \text{ if } f(x,y) \geq 0 \text{ on } R \\
+\iint_R{f(x,y)}dA &\geq \iint_R{g(x,y)}dA \text{ if } f(x,y) \geq g(x,y) \text{ on } R \\ 
+\intertext{or} 
+\text{ If }R_1 \text{ and } R_2\text{ are non-overlapping regions,} \\
+\iint_R{f(x,y)}dA&=\iint_{R_1}{f(x,y)}dA+\iint_{R_2}{f(x,y)}dA \\ 
+\end{align*}
+$$
 $$A=\iint_RdA=\int_{x_1}^{x_2}\int_{y_1}^{y_2}dydx=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}rdrd \theta$$		$$V=\iint_R{f(x,y)}dA$$
 $$\text{Average Value}=\frac{1}{\text{Area of }R}\iint_R{f}dA \text{ }\text{ }\text{ }\text{ OR } \text{ }\text{ }\text{ } \frac{1}{\text{Volume of }D}\iiint_D{F}dV$$
 $$V=\iiint_DdV=\int_{x_1}^{x_2}\int_{y_1}^{y_2}\int_{z_1}^{z_2}dzdydx=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}\int_{z_1}^{z_2}rdzdrd \theta=\int_{\rho_1}^{\rho_2}\int_{\phi_1}^{\phi_2}\int_{\theta_1}^{\theta_2} \rho^2 \sin(\phi) d \theta d \phi d \rho$$
