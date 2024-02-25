@@ -2,6 +2,7 @@ Fubini's Theorem
 $$V=\iint_R{f(x,y)}dA=\int_c^d{\int_a^b{f(x,y)}}dxdy=\int_a^b{\int_c^d{f(x,y)}}dydx$$
 if $R$ is defined by $a\leq x \leq b$ and $g_1(x) \leq y \leq g_2(x)$ then,
 $$V=\int_a^b{\int_{g_1(x)}^{g_2(x)}{f(x,y)}}dydx$$
+Notice: The functions $g_n(x)$ are evaluated first.
 # Properties
 $$\iint_R{cf(x,y)}dA=c\iint_R{f(x,y)}dA$$
 $$\iint_R{f(x,y) \pm g(x,y)}dA=\iint_R{f(x,y)}dA \pm \iint_R{g(x,y)}dA$$
