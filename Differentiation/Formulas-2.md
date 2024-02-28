@@ -45,7 +45,7 @@ df&= (\nabla f(P_0) \cdot u) ds
 \end{aligned}$$
 Standard Linear Approximation Error where $M$ is the upper bound of the second partials on a rectangle centered at point $P$, 
 $$\left|E\right|\le\frac{1}{2}M\left(\left|x-x_0\right|+\left|y-y_0\right|\right)^2$$
-Second Partials Test at $(x_0,y_0)$ assuming $\nabla f= 0$,
+Second Partia4ls Test at $(x_0,y_0)$ assuming $\nabla f= 0$,
 $$
 \begin{gather*}
 A = f_{xx}(x_0,y_0), \quad B = f_{xy}(x_0,y_0) \quad, C = f_{yy}(x_0,y_0) \\
@@ -57,6 +57,7 @@ D &=0 \text{ Indecisive}
 \end{aligned}
 \end{gather*}
 $$
- For the relative extrema, if $D>0$ and $A>0$ then you have a local min, if $A<0$ you have a local max. 
- Lagrange Multipliers when $g(x,y)=0$, $$\nabla f = \lambda\nabla g $$
+ For the relative extrema, if $D>0$ and $A>0$ then you have a local min, if $A<0$ you have a local max.
+ Lagrange Multipliers when $g(x,y)=0$, 
+ $$\nabla f = \lambda\nabla g $$
  
