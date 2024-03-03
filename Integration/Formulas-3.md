@@ -64,10 +64,14 @@ $$
 $$
 ## Joint probability density function
 ### Conditions
-$$f(x,y) \geq 0$$
-$$\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x,y)dxdy=1$$
-$$P((X,Y) \in R) = \iint_R f(x,y) dxdy$$
-Mean and expected value:
+$$
+\begin{align}
+    f(x,y) &\geq 0 \\
+    \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x,y)dxdy&=1 \\
+    P((X,Y) \in R) &= \iint_R f(x,y) dxdy\\
+\end{align}
+$$
+### Mean and expected value
 $$\mu_X=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}xf(x,y)dxdy$$
 $$\mu_Y=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}yf(x,y)dxdy$$
 ## Spherical Coordinates $(\rho, \phi, \theta)$
