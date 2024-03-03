@@ -26,13 +26,22 @@ V &=\iiint_DdV \\
 \end{aligned}
 $$
 ## Mass and First Moments of 3D Solids
-$$\text{Mass: }M=\iiint_D{\delta}dV$$
-$$\text{First Moments: }M_{yz}=\iiint_D{x\delta}dV, M_{xz}=\iiint_D{y\delta}dV, M_{xy}=\iiint_D{z\delta}dV$$
-$$\text{Center of mass: }\bar{x}=\frac{M_{yz}}{M}, \bar{y}=\frac{M_{xz}}{M}, \bar{z}=\frac{M_{xy}}{M}$$
-$$\text{Mass and First Moments of 2D Plates:}$$
-$$\text{Mass: }M=\iint_R{\delta}dA$$
-$$\text{First Moments: }M_{y}=\iint_R{x\delta}dA, M_{x}=\iint_R{y\delta}dA$$
-$$\text{Center of mass: }\bar{x}=\frac{M_{y}}{M}, \bar{y}=\frac{M_{x}}{M}$$
+$\delta$ is the density function.
+$$
+\begin{array} \\
+\displaystyle \text{Mass: }M=\iiint_D{\delta}dV \\
+\displaystyle \text{First Moments: }M_{yz}=\iiint_D{x\delta}dV, M_{xz}=\iiint_D{y\delta}dV, M_{xy}=\iiint_D{z\delta}dV\\
+\displaystyle\text{Center of mass: }\bar{x}=\frac{M_{yz}}{M}, \bar{y}=\frac{M_{xz}}{M}, \bar{z}=\frac{M_{xy}}{M}\\
+\end{array}
+$$
+## Mass and First Moments of 2D Plates
+$$
+\begin{array} \\
+  \displaystyle  \text{Mass: }M=\iint_R{\delta}dA \\
+  \displaystyle  \text{First Moments: }M_{y}=\iint_R{x\delta}dA, M_{x}=\iint_R{y\delta}dA \\ 
+  \displaystyle  \text{Center of mass: }\bar{x}=\frac{M_{y}}{M}, \bar{y}=\frac{M_{x}}{M} \\
+\end{array}
+$$
 $$\text{Moments of Inertia of 3D Solids:}$$
 $$\text{About x-axis: }I_x=\iiint_D{(y^2+z^2)\delta}dV$$
 $$\text{About y-axis: }I_y=\iiint_D{(x^2+z^2)\delta}dV$$
