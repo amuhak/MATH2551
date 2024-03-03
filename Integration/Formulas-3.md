@@ -25,35 +25,45 @@ V &=\iiint_DdV \\
 &=\int_{\rho_1}^{\rho_2}\int_{\phi_1}^{\phi_2}\int_{\theta_1}^{\theta_2} \rho^2 \sin(\phi) \ \ d \theta d \phi d \rho
 \end{aligned}
 $$
-## Mass and First Moments of 3D Solids
+## Mass and First Moments
+### 3D Solids
 $\delta$ is the density function.
 $$
 \begin{array} \\
-\displaystyle \text{Mass: }M=\iiint_D{\delta}dV \\
-\displaystyle \text{First Moments: }M_{yz}=\iiint_D{x\delta}dV, M_{xz}=\iiint_D{y\delta}dV, M_{xy}=\iiint_D{z\delta}dV\\
+\displaystyle \text{Mass: }M=\iiint_D{\delta}\ dV \\
+\displaystyle \text{First Moments: }M_{yz}=\iiint_D{x\delta}\ dV, M_{xz}=\iiint_D{y\delta}\ dV, M_{xy}=\iiint_D{z\delta}\ dV\\
 \displaystyle\text{Center of mass: }\bar{x}=\frac{M_{yz}}{M}, \bar{y}=\frac{M_{xz}}{M}, \bar{z}=\frac{M_{xy}}{M}\\
 \end{array}
 $$
-## Mass and First Moments of 2D Plates
+### 2D Plates
 $$
 \begin{array} \\
-  \displaystyle  \text{Mass: }M=\iint_R{\delta}dA \\
-  \displaystyle  \text{First Moments: }M_{y}=\iint_R{x\delta}dA, M_{x}=\iint_R{y\delta}dA \\ 
-  \displaystyle  \text{Center of mass: }\bar{x}=\frac{M_{y}}{M}, \bar{y}=\frac{M_{x}}{M} \\
+  \displaystyle  \text{Mass: }M=\iint_R{\delta}\ dA \\
+  \displaystyle  \text{First Moments: }M_{y}=\iint_R{x\delta}\ dA, M_{x}=\iint_R{y\delta}\ dA \\ 
+  \displaystyle  \text{Center of mass: }\bar{x}=\frac{M_{y}}{M},\bar{y}=\frac{M_{x}}{M} \\
 \end{array}
 $$
-$$\text{Moments of Inertia of 3D Solids:}$$
-$$\text{About x-axis: }I_x=\iiint_D{(y^2+z^2)\delta}dV$$
-$$\text{About y-axis: }I_y=\iiint_D{(x^2+z^2)\delta}dV$$
-$$\text{About z-axis: }I_z=\iiint_D{(x^2+y^2)\delta}dV$$
-$$\text{About a line L: }I_L=\iiint_D{r^2(x,y,z)\delta}dV$$
-$$\text{Moments of Inertia of 2D Plates:}$$
-$$\text{About x-axis: }I_x=\iint_R{y^2\delta}dA$$
-$$\text{About y-axis: }I_y=\iint_R{x^2\delta}dA$$
-$$\text{About a line L: }I_L=\iint_R{r^2(x,y)\delta}dA$$
-$$\text{About the origin: }I_O=\iint_R{(x^2+y^2)\delta}dA=I_x+I_y$$
-$$\text{Joint probability density function: }$$
-$$\text{Conditions:}$$
+## Moments of Inertia 
+### 3D Solids
+$$
+\begin{aligned}
+    \text{About x-axis: }I_x&=\iiint_D{(y^2+z^2)\delta}dV \\ 
+    \text{About y-axis: }I_y&=\iiint_D{(x^2+z^2)\delta}dV \\ 
+    \text{About z-axis: }I_z&=\iiint_D{(x^2+y^2)\delta}dV \\ 
+    \text{About a line L: }I_L&=\iiint_D{r^2(x,y,z)\delta}dV \\
+\end{aligned}
+$$
+### 2D Plates
+$$
+\begin{aligned}
+    \text{About x-axis: }I_x&=\iint_R{y^2\delta}dA \\
+    \text{About y-axis: }I_y&=\iint_R{x^2\delta}dA \\
+    \text{About a line L: }I_L&=\iint_R{r^2(x,y)\delta}dA \\
+    \text{About the origin: }I_O&=\iint_R{(x^2+y^2)\delta}dA=I_x+I_y \\
+\end{aligned}
+$$
+## Joint probability density function
+### Conditions
 $$f(x,y) \geq 0$$
 $$\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f(x,y)dxdy=1$$
 $$P((X,Y) \in R) = \iint_R f(x,y) dxdy$$
