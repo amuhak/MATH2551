@@ -14,10 +14,18 @@ $$
 $$
 If $R_1$ and $R_2$ are non-overlapping regions, 
 $$\iint_R{f(x,y)}dA=\iint_{R_1}{f(x,y)}dA+\iint_{R_2}{f(x,y)}dA$$
-$$A=\iint_RdA=\int_{x_1}^{x_2}\int_{y_1}^{y_2}dydx=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}r\ drd \theta$$		$$V=\iint_R{f(x,y)}dA$$
-$$\text{Average Value}=\frac{1}{\text{Area of }R}\iint_R{f}dA \text{ }\text{ }\text{ }\text{ OR } \text{ }\text{ }\text{ } \frac{1}{\text{Volume of }D}\iiint_D{F}dV$$
-$$V=\iiint_DdV=\int_{x_1}^{x_2}\int_{y_1}^{y_2}\int_{z_1}^{z_2}dzdydx=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}\int_{z_1}^{z_2}rdzdrd \theta=\int_{\rho_1}^{\rho_2}\int_{\phi_1}^{\phi_2}\int_{\theta_1}^{\theta_2} \rho^2 \sin(\phi) d \theta d \phi d \rho$$
-Mass and First Moments of $3$D Solids
+$$A=\iint_RdA=\int_{x_1}^{x_2}\int_{y_1}^{y_2}dydx=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}r\ drd \theta$$
+$$V=\iint_R{f(x,y)}dA$$
+$$\text{Average Value}=\frac{1}{\text{Area of }R}\iint_R{f}dA \quad \text{ OR } \quad \frac{1}{\text{Volume of }D}\iiint_D{F}dV$$
+$$
+\begin{aligned}
+V &=\iiint_DdV \\ 
+&=\int_{x_1}^{x_2}\int_{y_1}^{y_2}\int_{z_1}^{z_2}dzdydx \\
+&=\int_{\theta_1}^{\theta_2}\int_{r_1}^{r_2}\int_{z_1}^{z_2}r \ dzdrd \theta \\
+&=\int_{\rho_1}^{\rho_2}\int_{\phi_1}^{\phi_2}\int_{\theta_1}^{\theta_2} \rho^2 \sin(\phi) \ \ d \theta d \phi d \rho
+\end{aligned}
+$$
+## Mass and First Moments of 3D Solids
 $$\text{Mass: }M=\iiint_D{\delta}dV$$
 $$\text{First Moments: }M_{yz}=\iiint_D{x\delta}dV, M_{xz}=\iiint_D{y\delta}dV, M_{xy}=\iiint_D{z\delta}dV$$
 $$\text{Center of mass: }\bar{x}=\frac{M_{yz}}{M}, \bar{y}=\frac{M_{xz}}{M}, \bar{z}=\frac{M_{xy}}{M}$$
