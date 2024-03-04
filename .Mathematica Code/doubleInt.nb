@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[      5935,        148]
-NotebookOptionsPosition[      5348,        131]
-NotebookOutlinePosition[      5793,        148]
-CellTagsIndexPosition[      5750,        145]
+NotebookDataLength[      7550,        179]
+NotebookOptionsPosition[      6981,        163]
+NotebookOutlinePosition[      7407,        179]
+CellTagsIndexPosition[      7364,        176]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -23,14 +23,15 @@ Cell[BoxData[{
   RowBox[{
    RowBox[{"f", "[", 
     RowBox[{"x_", ",", "y_"}], "]"}], "=", " ", 
-   RowBox[{"x", "*", 
-    RowBox[{"y", "^", "2"}]}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"x", "^", "2"}], "*", "y"}]}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"xmax", "=", "2"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"xmin", "=", "0"}], ";"}], "\n", 
+  RowBox[{"xmin", "=", 
+   RowBox[{"-", "2"}]}], ";"}], "\n", 
  RowBox[{
-  RowBox[{"ymax", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"ymax", "=", "8"}], ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{"ymin", "=", "0"}], ";"}]}], "Input",
  CellChangeTimes->{{3.917895005804983*^9, 3.917895142246393*^9}, {
@@ -53,40 +54,71 @@ Cell[BoxData[{
    3.917903278836848*^9}, {3.918244946839537*^9, 3.918244956612387*^9}, {
    3.918244989167585*^9, 3.918245008698286*^9}, {3.918245179283554*^9, 
    3.91824522097954*^9}, {3.918245692372541*^9, 3.918245696034916*^9}, {
-   3.918245747546669*^9, 3.9182457810357237`*^9}, 3.918248984144964*^9, {
-   3.91841561845047*^9, 3.9184156623378696`*^9}},
- CellLabel->"In[24]:=",ExpressionUUID->"9023fda8-b32d-8848-9c88-a6587a7cc093"],
+   3.918245747546669*^9, 3.918245781035723*^9}, 3.918248984144964*^9, {
+   3.91841561845047*^9, 3.918415662337869*^9}, {3.918547168886736*^9, 
+   3.9185471912164173`*^9}, {3.9185475108857384`*^9, 
+   3.9185475245565147`*^9}, {3.9185494354340477`*^9, 3.91854946848909*^9}, {
+   3.9185500950362873`*^9, 3.918550095160429*^9}, {3.918550149714548*^9, 
+   3.918550171046879*^9}, {3.918550223181963*^9, 3.9185502370350494`*^9}, {
+   3.9185504436724358`*^9, 3.918550458897007*^9}, {3.9185554422197437`*^9, 
+   3.9185554556673546`*^9}, {3.9185557091084366`*^9, 3.9185557876570187`*^9}},
+ CellLabel->"In[85]:=",ExpressionUUID->"9023fda8-b32d-8848-9c88-a6587a7cc093"],
 
 Cell[BoxData[{
  RowBox[{
-  RowBox[{"Integrate", "[", 
-   RowBox[{
-    RowBox[{"f", "[", 
-     RowBox[{"x", ",", "y"}], "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "xmin", ",", "xmax"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"y", ",", "ymin", ",", "ymax"}], "}"}], ",", 
-    RowBox[{"Assumptions", "\[Rule]", "Reals"}]}], "]"}], "//", 
-  "FullSimplify"}], "\[IndentingNewLine]", 
+  InterpretationBox[
+   DynamicModuleBox[{Typeset`open = False}, 
+    TemplateBox[{"Expression", 
+      RowBox[{"Integrate", "[", 
+        DynamicBox[
+         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+      GridBox[{{
+         RowBox[{
+           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+           TagBox["312", "IconizedItem"]}]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+       "Column", 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+      Dynamic[Typeset`open]},
+     "IconizedObject"]],
+   Integrate[
+    $CellContext`f[$CellContext`x, $CellContext`y], {$CellContext`x, \
+$CellContext`xmin, $CellContext`xmax}, {$CellContext`y, $CellContext`ymin, \
+$CellContext`ymax}, Assumptions -> Reals],
+   SelectWithContents->True,
+   Selectable->False], "//", "FullSimplify"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"Integrate", "[", 
-   RowBox[{
-    RowBox[{"f", "[", 
-     RowBox[{"x", ",", "y"}], "]"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"y", ",", "ymin", ",", "ymax"}], "}"}], ",", 
-    RowBox[{"{", 
-     RowBox[{"x", ",", "xmin", ",", "xmax"}], "}"}], ",", 
-    RowBox[{"Assumptions", "->", "Reals"}]}], "]"}], "//", 
-  "FullSimplify"}]}], "Input",
+  InterpretationBox[
+   DynamicModuleBox[{Typeset`open = False}, 
+    TemplateBox[{"Expression", 
+      RowBox[{"Integrate", "[", 
+        DynamicBox[
+         FEPrivate`FrontEndResource["FEBitmaps", "IconizeEllipsis"]], "]"}], 
+      GridBox[{{
+         RowBox[{
+           TagBox["\"Byte count: \"", "IconizedLabel"], "\[InvisibleSpace]", 
+           TagBox["312", "IconizedItem"]}]}}, 
+       GridBoxAlignment -> {"Columns" -> {{Left}}}, DefaultBaseStyle -> 
+       "Column", 
+       GridBoxItemSize -> {
+        "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}], 
+      Dynamic[Typeset`open]},
+     "IconizedObject"]],
+   Integrate[
+    $CellContext`f[$CellContext`x, $CellContext`y], {$CellContext`y, \
+$CellContext`ymin, $CellContext`ymax}, {$CellContext`x, $CellContext`xmin, \
+$CellContext`xmax}, Assumptions -> Reals],
+   SelectWithContents->True,
+   Selectable->False], "//", "FullSimplify"}]}], "Input",
  CellChangeTimes->{{3.917895091450727*^9, 3.917895103131109*^9}, {
    3.917895165462656*^9, 3.917895183175096*^9}, {3.9178965144814625`*^9, 
    3.9178965292060833`*^9}, {3.9178975332901993`*^9, 3.917897544477581*^9}, {
    3.9178975764198093`*^9, 3.917897577670494*^9}, {3.9178976601067657`*^9, 
    3.917897662372423*^9}, {3.917898208142964*^9, 3.917898215113728*^9}, 
-   3.918245232869695*^9},
- CellLabel->"In[29]:=",ExpressionUUID->"fd7413ce-6e14-6d47-8784-94b8095f7bd7"],
+   3.918245232869695*^9, {3.918556339734585*^9, 
+   3.9185563515874805`*^9}},ExpressionUUID->"fd7413ce-6e14-6d47-8784-\
+94b8095f7bd7"],
 
 Cell[BoxData[{
  RowBox[{"int1", " ", "=", " ", 
@@ -129,9 +161,8 @@ Cell[BoxData[{
  CellLabel->
   "In[240]:=",ExpressionUUID->"cd82f8af-b48e-6f41-8ea8-988bf58d1aa6"]
 },
-WindowSize->{1152, 615.6},
-WindowMargins->{{
-  Automatic, -5.399999999999864}, {-5.399999999999977, Automatic}},
+WindowSize->{597.6, 483},
+WindowMargins->{{Automatic, 200.4000000000001}, {Automatic, 35.4}},
 FrontEndVersion->"14.0 for Microsoft Windows (64-bit) (December 12, 2023)",
 StyleDefinitions->"ReverseColor.nb",
 ExpressionUUID->"01956c33-0b25-1d4c-a6f0-119ea01e3709"
@@ -147,9 +178,9 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 2117, 37, 105, "Input",ExpressionUUID->"9023fda8-b32d-8848-9c88-a6587a7cc093"],
-Cell[2678, 59, 1229, 29, 48, "Input",ExpressionUUID->"fd7413ce-6e14-6d47-8784-94b8095f7bd7"],
-Cell[3910, 90, 1434, 39, 124, "Input",ExpressionUUID->"cd82f8af-b48e-6f41-8ea8-988bf58d1aa6"]
+Cell[558, 20, 2591, 44, 105, "Input",ExpressionUUID->"9023fda8-b32d-8848-9c88-a6587a7cc093"],
+Cell[3152, 66, 2388, 54, 62, "Input",ExpressionUUID->"fd7413ce-6e14-6d47-8784-94b8095f7bd7"],
+Cell[5543, 122, 1434, 39, 124, "Input",ExpressionUUID->"cd82f8af-b48e-6f41-8ea8-988bf58d1aa6"]
 }
 ]
 *)
