@@ -78,6 +78,8 @@ $$
 \mu_Y&=\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}yf(x,y)dxdy
 \end{aligned}
 $$
+## Cylindrical Coordinates $(r,\theta,z)$
+
 ## Spherical Coordinates $(\rho, \phi, \theta)$
 $$r=\rho \sin(\phi),$$		$$ x= r \cos(\theta)=\rho \sin(\phi)\cos(\theta)$$$$z=\rho \cos(\phi),$$		$$ y= r \sin(\theta)=\rho \sin(\phi)\sin(\theta)$$
 $$\rho = \sqrt{x^2+y^2+z^2} = \sqrt{r^2+z^2}$$
