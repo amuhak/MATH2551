@@ -79,11 +79,28 @@ $$
 \end{aligned}
 $$
 ## Cylindrical Coordinates $(r,\theta,z)$
-
+$$
+\begin{aligned}
+    x &= r \cos{\theta} \\
+    y &= r \sin{\theta} \\
+    z &= z \\
+    r^2 &= x^2+y^2 \\
+    \tan{\theta} &= \frac{y}{x} \\
+    \iiint_T \ dV &= \iiint r \ drd\theta dz
+\end{aligned}
+$$
 ## Spherical Coordinates $(\rho, \phi, \theta)$
-$$r=\rho \sin(\phi),$$		$$ x= r \cos(\theta)=\rho \sin(\phi)\cos(\theta)$$$$z=\rho \cos(\phi),$$		$$ y= r \sin(\theta)=\rho \sin(\phi)\sin(\theta)$$
-$$\rho = \sqrt{x^2+y^2+z^2} = \sqrt{r^2+z^2}$$
-Jacobian:
+$$
+\begin{aligned}
+r&=\rho \sin(\phi) \\ 
+x&= r \cos(\theta)=\rho \sin(\phi)\cos(\theta)\\ 
+y&= r \sin(\theta)=\rho \sin(\phi)\sin(\theta) \\
+z&=\rho \cos(\phi) \\
+\rho &= \sqrt{x^2+y^2+z^2} = \sqrt{r^2+z^2} \\
+\iiint_T \ dV &= \iiint \rho^2 \sin{\phi} \ d\rho d\phi d\theta
+\end{aligned}
+$$
+## Jacobian
 $$J(u,v)=\begin{vmatrix} \frac{\partial{x}}{\partial{u}} & {\frac{\partial{x}}{\partial{v}}} \\
  \frac{\partial{y}}{\partial{u}} & \frac{\partial{y}}{\partial{v}} \end{vmatrix}=\frac{\partial(x,y)}{\partial(u,v)}$$
 $$\iint_R{f(x,y)}dxdy=\iint_G{f(g(u,v),h(u,v))} \left | \frac{\partial(x,y)}{\partial(u,v)}\right | dudv$$
