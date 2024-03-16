@@ -1,4 +1,5 @@
 import os
+import re
 from PyPDF2 import PdfMerger
 def sorter(s):
     m = re.compile('[0-9]')
