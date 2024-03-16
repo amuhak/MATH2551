@@ -19,6 +19,7 @@ if __name__ == "__main__":
     # Specify the output path for the combined PDF
     output_path = "AllFormulaSheets.pdf"
     pdf_list.sort(reverse = True)
+    print(pdf_list)
 
     # Combine PDFs
     combine_pdfs(pdf_list, output_path)
