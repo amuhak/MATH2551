@@ -1,6 +1,8 @@
 import os
 from PyPDF2 import PdfMerger
-
+def sorter(s):
+    m = re.compile('[0-9]')
+    return m.findall(s)[0]
 def combine_pdfs(pdf_list, output_path):
     print(pdf_list)
     merger = PdfMerger()
@@ -18,7 +20,7 @@ if __name__ == "__main__":
 
     # Specify the output path for the combined PDF
     output_path = "AllFormulaSheets.pdf"
-    pdf_list.sort(reverse = True)
+    pdf_list.sort(reverse = True, key=sorter)
     print(pdf_list)
 
     # Combine PDFs
