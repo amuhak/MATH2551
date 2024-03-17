@@ -41,9 +41,16 @@ $$
 \end{aligned}
 $$
 # Conservative Fields
-Fields are conservative if $\displaystyle \int_C \vec{F} \cdot d \vec{r}$ is path independent.
-$$\text{Potential Function: If }\vec{F}=\nabla f \text{ then } f \text{ is the potential function for }\vec{F}$$
+Fields are conservative if $\displaystyle \int_C \vec{F} \cdot d \vec{r}$ is path independent. 
+
+They conservative are if and only if:
+$$
+\frac{\partial{P}}{\partial{y}}=\frac{\partial{N}}{\partial{z}}, \quad
+\frac{\partial{M}}{\partial{z}}=\frac{\partial{P}}{\partial{x}}, \quad
+\frac{\partial{N}}{\partial{x}}=\frac{\partial{M}}{\partial{y}}
+$$
+$\vec{F}=\nabla f$ then $f$ is the potential function for $\vec{F}$. So $\vec{F}$ can be represented as such: 
+$$\vec{F}$$
 $$\vec{F} \text{ is conservative if and only if } \vec{F} \text{ is a gradient field }\nabla f \text{ for differentiable function }f$$
-$$\vec{F}\text{ is conservative if and only if }\frac{\partial{P}}{\partial{y}}=\frac{\partial{N}}{\partial{z}},\frac{\partial{M}}{\partial{z}}=\frac{\partial{P}}{\partial{x}} \text{ and } \frac{\partial{N}}{\partial{x}}=\frac{\partial{M}}{\partial{y}}$$  
 $$\text{For a conservative vector field, } \vec{F}, \int_C \vec{F} \cdot d \vec{r}=f(B)-f(A)$$
 
