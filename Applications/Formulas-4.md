@@ -50,4 +50,5 @@ $$
 \frac{\partial{M}}{\partial{z}}=\frac{\partial{P}}{\partial{x}}, \quad
 \frac{\partial{N}}{\partial{x}}=\frac{\partial{M}}{\partial{y}}
 $$
-$$\text{For a conservative vector field, } \vec{F}, \int_C \vec{F} \cdot d \vec{r}=f(B)-f(A)$$
+For a conservative vector field, $\displaystyle \vec{F}, \int_C \vec{F} \cdot d \vec{r}=f(B)-f(A)$
+
