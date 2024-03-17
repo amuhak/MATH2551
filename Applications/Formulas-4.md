@@ -43,7 +43,7 @@ $$
 # Conservative Fields
 Fields are conservative if $\displaystyle \int_C \vec{F} \cdot d \vec{r}$ is path independent.
 $\vec{F}=\nabla f$ then $f$ is the potential function for $\vec{F}$. So $\vec{F}$ can be represented as such: 
-$$\vec{F}$$
+$$\vec{F} = M(x,y,z)\mathbf{i} +N(x,y,z)\mathbf{j}+P(x,y,z)\mathbf{k}$$
 $\vec{F}$ must have a potential function to be conservative. Also, $\vec{F}$ conservative are if and only if:
 $$
 \frac{\partial{P}}{\partial{y}}=\frac{\partial{N}}{\partial{z}}, \quad
