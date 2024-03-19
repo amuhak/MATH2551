@@ -108,4 +108,3 @@ $$J(u,v,w)=\begin{vmatrix} \frac{\partial{x}}{\partial{u}} & \frac{\partial{x}}{
  \frac{\partial{y}}{\partial{u}} & \frac{\partial{y}}{\partial{v}} & \frac{\partial{y}}{\partial{w}} \\
 \frac{\partial{z}}{\partial{u}} & \frac{\partial{z}}{\partial{v}} & \frac{\partial{z}}{\partial{w}} \end{vmatrix}= \frac{\partial(x,y,z)}{\partial(u,v,w)}$$
 $$\iiint_D{f(x,y,z)}dxdydz=\iiint_B{f(g(u,v,w),h(u,v,w),k(u,v,w)) \left | \frac{\partial(x,y,z)}{\partial(u,v,w)} \right | }dudvdw$$
-	
