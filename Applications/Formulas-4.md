@@ -5,7 +5,7 @@ ds&=||\vec{r}'(t)||dt \\
 \int_C f(x,y,z)ds&=\int_a^bf(g(t),h(t),k(t))|\vec{v}(t)|dt
 \end{aligned}
 $$
-	# Thin wire
+# Thin wire
 ## Mass
 $$\int_C \delta ds$$
 ## First Moments
