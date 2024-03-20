@@ -35,9 +35,9 @@ $$
 ## Applications
 $$
 \begin{aligned}
-\text{Work}&=\int_C \vec{F} \cdot \vec{T}ds \\
-\text{Flow}&=\int_C \vec{F} \cdot \vec{T}ds=\int_CMdx+Ndy \\
-\text{Flux}&=\int_C \vec{F} \cdot \vec{T}ds=\oint_CMdy-Ndx
+\text{Work}&=\int_C \vec{F} \cdot \vec{T}\ ds \\
+\text{Flow}&=\int_C \vec{F} \cdot \vec{T} \ ds=\int_CMdx+Ndy \\
+\text{Flux}&=\int_C \vec{F} \cdot \vec{n} \ ds=\oint_CMdy-Ndx
 \end{aligned}
 $$
 # Conservative Fields
@@ -51,4 +51,3 @@ $$
 \frac{\partial{N}}{\partial{x}}=\frac{\partial{M}}{\partial{y}}
 $$
 For a conservative vector field, $\displaystyle \vec{F}, \int_C \vec{F} \cdot d \vec{r}=f(B)-f(A)$
-
